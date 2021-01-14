@@ -2,53 +2,34 @@ const connection = require('./database/connection');
 const mongoose = require('mongoose');
 const Promise = require('bluebird');
 
+const usersViewed = require('./data/usersViewed');
+const usersBought = require('./data/usersBought');
 
 const Bought = require('./database/boughtModel');
 const Viewed = require('./database/viewedModel');
 
-const usersViewed = [
-  {
-    productId: 1,
-    photoURL: 'https://www.rei.com/media/product/101409?size=280',
-    brandName: 'Manduka',
-    itemName: 'Recycled Foam Yoga Block',
-    itemRating: 4.3
-  }
-];
-
-const usersBought = [
-  {
-    productId: 1,
-    photoURL: 'https://www.rei.com/media/product/860616?size=280',
-    brandName: 'Manduka',
-    itemName: 'Recycled Foam Yoga Block',
-    itemRating: 0
-  }
-];
-
-
 const dropMongo = async () => {
-  console.log('Clearing out models...');
+  console.log('Clearing out models...', '\n');
   await Bought.deleteMany();
   await Viewed.deleteMany();
-  console.log('Models cleared...');
+  console.log('Models cleared...', '\n');
 };
 
 const seedViewed = async () => {
-  console.log('Seeding viewedModel...');
+  console.log('Seeding viewedModel...', '\n');
   try {
     await Viewed.insertMany(usersViewed);
-    console.log('Success: Seeded viewedModel!...');
+    console.log('Success: Seeded viewedModel!...', '\n');
   } catch (error) {
     console.log(`Error! ${error}...`);
   }
 };
 
 const seedBought = async () => {
-  console.log('Seeding boughtModel...');
+  console.log('Seeding boughtModel...', '\n');
   try {
     await Bought.insertMany(usersBought);
-    console.log('Success: Seeded boughtModel!...');
+    console.log('Success: Seeded boughtModel!...', '\n');
   } catch (error) {
     console.log(`Error! ${error}...`);
   }
@@ -62,9 +43,10 @@ const seed = async () => {
 
 const seeAll = async () => {
   try {
-    console.log('Listing Documents... Bought ...');
+    console.log('Listing Documents... Bought ...', '\n');
     await Bought.find().then((results) => console.log(results));
-    console.log('Listing Documents... Viewed ...');
+    console.log('\n');
+    console.log('Listing Documents... Viewed ...', '\n');
     await Viewed.find().then((results) => console.log(results));
   } catch (error) {
     console.log(`Error! ${error}...`);

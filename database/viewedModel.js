@@ -6,7 +6,8 @@ const ViewedSchema = mongoose.Schema({
   URL: String,
   brandName: String,
   itemName: String,
-  itemRating: Number
+  itemRating: Number,
+  itemPrice: Number
 });
 
 module.exports = mongoose.model('Viewed', ViewedSchema);
