@@ -8,6 +8,7 @@ const ViewedSchema = mongoose.Schema({
   itemName: String,
   itemRating: Number,
   itemPrice: String,
+  ratingCount: Number,
 });
 
 module.exports = mongoose.model('Viewed', ViewedSchema);

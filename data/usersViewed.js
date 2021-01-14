@@ -6,6 +6,7 @@ const usersViewed = [
     itemName: 'Recycled Foam Yoga Block',
     itemRating: 4.3,
     itemPrice: '$16.00',
+    ratingCount: 4,
   },
 ];
 
