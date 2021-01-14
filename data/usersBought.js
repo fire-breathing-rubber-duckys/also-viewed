@@ -5,6 +5,7 @@ const usersBought = [
     brandName: 'Manduka',
     itemName: 'Align Yoga Strap',
     itemRating: 5,
+    itemPrice: '$16.00',
   },
   {
     productId: 2,
@@ -12,6 +13,7 @@ const usersBought = [
     brandName: 'Pro-Tec Athletics',
     itemName: 'Resistance Bands',
     itemRating: 4.5,
+    itemPrice: '$14.95',
   },
   {
     productId: 3,
@@ -19,6 +21,7 @@ const usersBought = [
     brandName: 'Jade',
     itemName: 'Level 1 Yoga Mat',
     itemRating: 4,
+    itemPrice: '$49.95',
   },
   {
     productId: 4,
@@ -26,13 +29,15 @@ const usersBought = [
     brandName: 'Manduka',
     itemName: 'Mat Renew Yoga Mat Wash',
     itemRating: 5,
+    itemPrice: '$14.00',
   },
   {
     productId: 5,
-    photoURL: 'https://www.rei.com/media/product/843155?size=280',
-    brandName: 'Manduka',
-    itemName: 'Mat Renew Yoga Mat Wash',
+    photoURL: 'https://www.rei.com/media/product/177755?size=280',
+    brandName: 'Ledlenser',
+    itemName: 'NEO6R Rechargeable Running Headlamp',
     itemRating: 5,
+    itemPrice: '$39.95',
   },
 ];
 

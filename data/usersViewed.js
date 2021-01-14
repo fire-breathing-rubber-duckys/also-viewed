@@ -5,7 +5,7 @@ const usersViewed = [
     brandName: 'Manduka',
     itemName: 'Recycled Foam Yoga Block',
     itemRating: 4.3,
-    itemPrice: 16.00,
+    itemPrice: '$16.00',
   },
 ];
 
