@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const BoughtSchema = mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
+  productId: Number,
   URL: String,
   brandName: String,
   itemName: String,
@@ -9,3 +9,4 @@ const BoughtSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model('Bought', BoughtSchema);
+

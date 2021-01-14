@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // People also viewed Schema //
 const ViewedSchema = mongoose.Schema({
-  _id: mongoose.Schema.Types.ObjectId,
+  productId: Number,
   URL: String,
   brandName: String,
   itemName: String,
