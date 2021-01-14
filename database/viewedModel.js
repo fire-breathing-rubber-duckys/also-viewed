@@ -7,7 +7,7 @@ const ViewedSchema = mongoose.Schema({
   brandName: String,
   itemName: String,
   itemRating: Number,
-  itemPrice: Number
+  itemPrice: String
 });
 
 module.exports = mongoose.model('Viewed', ViewedSchema);
