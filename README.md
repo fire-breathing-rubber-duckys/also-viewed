@@ -1,1 +1,1 @@
-# top-pics
+# also-viewed
