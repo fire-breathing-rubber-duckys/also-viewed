@@ -1,7 +1,4 @@
 const connection = require('./database/connection');
-const mongoose = require('mongoose');
-const Promise = require('bluebird');
-
 const usersViewed = require('./data/usersViewed');
 const usersBought = require('./data/usersBought');
 
@@ -53,7 +50,7 @@ const seeAll = async () => {
   }
 };
 
-const driver = async function() {
+const driver = async () => {
   await seed();
   await seeAll();
 };

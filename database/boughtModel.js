@@ -5,8 +5,8 @@ const BoughtSchema = mongoose.Schema({
   URL: String,
   brandName: String,
   itemName: String,
-  itemRating: Number
+  itemRating: Number,
+  itemPrice: String,
 });
 
 module.exports = mongoose.model('Bought', BoughtSchema);
-
