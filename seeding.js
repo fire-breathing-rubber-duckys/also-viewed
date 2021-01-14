@@ -53,6 +53,7 @@ const seeAll = async () => {
 const driver = async () => {
   await seed();
   await seeAll();
+  process.exit(0);
 };
 
 driver();
