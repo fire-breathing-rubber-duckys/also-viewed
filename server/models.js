@@ -21,6 +21,17 @@ const fetchBought = (callback) => {
   });
 };
 
+const fetchSingleBought = (callback) => {
+  const random = Math.floor(Math.random() * 3);
+  Bought.find({ identifier: random }, (error, response) => {
+    if (error) {
+      callback(error);
+    } else {
+      callback(null, response);
+    }
+  });
+};
+
 module.exports = {
-  fetchAlsoViewed, fetchBought,
+  fetchAlsoViewed, fetchBought, fetchSingleBought,
 };

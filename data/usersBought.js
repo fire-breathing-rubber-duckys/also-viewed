@@ -1,6 +1,7 @@
 const usersBought = [
   {
     productName: 'Manduka Align Yoga Strap',
+    identifier: 0,
     related: [
       {
         productId: 1,
@@ -105,6 +106,7 @@ const usersBought = [
   },
   {
     productName: 'Black Diamond Solution Harness - Men\'s',
+    identifier: 1,
     related: [
       {
         productId: 1,
@@ -209,6 +211,7 @@ const usersBought = [
   },
   {
     productName: 'REI Co-op Travel Kit - Large',
+    identifier: 2,
     related: [
       {
         productId: 1,
