@@ -25,7 +25,6 @@ app.get('/api/top-picks/fetch', (req, res) => {
   });
 });
 
-// For testing to see all data, will only need to fetch one //
 app.get('/api/ultimately-bought/fetch', (req, res) => {
   models.fetchBought((err, data) => {
     if (err) {
@@ -38,8 +37,9 @@ app.get('/api/ultimately-bought/fetch', (req, res) => {
   });
 });
 
-app.get('/api/ultimately-bought/fetch-one', (req, res) => {
-  models.fetchSingleBought((err, data) => {
+// For testing to see all data, will only need to fetch one //
+app.get('/api/ultimately-bought/fetch-all', (req, res) => {
+  models.fetchAllBought((err, data) => {
     if (err) {
       res.statusCode = 400;
       res.end();

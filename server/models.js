@@ -11,7 +11,7 @@ const fetchAlsoViewed = (callback) => {
   });
 };
 
-const fetchBought = (callback) => {
+const fetchAllBought = (callback) => {
   Bought.find({}, (error, response) => {
     if (error) {
       callback(error);
@@ -21,7 +21,7 @@ const fetchBought = (callback) => {
   });
 };
 
-const fetchSingleBought = (callback) => {
+const fetchBought = (callback) => {
   const random = Math.floor(Math.random() * 3);
   Bought.find({ identifier: random }, (error, response) => {
     if (error) {
@@ -33,5 +33,5 @@ const fetchSingleBought = (callback) => {
 };
 
 module.exports = {
-  fetchAlsoViewed, fetchBought, fetchSingleBought,
+  fetchAlsoViewed, fetchAllBought, fetchBought,
 };
