@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LeftButton from './LeftButton';
-import RightButton from './RightButton';
+import LeftButton from '../also-viewed/LeftButton';
+import RightButton from '../also-viewed/RightButton';
 import ItemPane from './ItemPane';
 
-const AlsoViewed = () => {
+const UltBought = () => {
   const [currentPage, setCurrentPage] = useState([1, 2, 3, 4, 5, 6]);
   const [buttonStatus, setButtonStatus] = useState('right');
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:1337/api/top-picks/fetch')
+    axios.get('http://localhost:1337/api/ultimately-bought/fetch')
       .then((response) => {
-        setData(response.data);
+        setData(response.data[0].related);
       })
       .catch((error) => {
         throw error;
@@ -41,8 +41,8 @@ const AlsoViewed = () => {
   }
 
   return (
-    <div className="also-viewed">
-      <h1> Customers Also Viewed...</h1>
+    <div className="ult-bought">
+      <h1> Customers Ult Bought...</h1>
       {leftButton}
       <ItemPane data={data} currentPage={currentPage} />
       {rightButton}
@@ -50,4 +50,4 @@ const AlsoViewed = () => {
   );
 };
 
-export default AlsoViewed;
+export default UltBought;
