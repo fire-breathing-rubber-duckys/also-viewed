@@ -1,0 +1,34 @@
+.flex-container {
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.flex-item {
+  margin: auto;
+}
+
+.carousel-enter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform: translate(100%, 0);
+  opacity: 1;
+}
+
+.carousel-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.carousel-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.carousel-leave-active {
+  transform: translate(-100%, 0);
+  opacity: 1;
+}
