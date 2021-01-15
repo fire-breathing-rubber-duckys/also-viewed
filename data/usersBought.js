@@ -146,7 +146,7 @@ const usersBought = [
       },
       {
         productId: 5,
-        photoURL: 'https://www.rei.com/media/product/899111?size=280',
+        photoURL: 'https://www.rei.com/media/product/761250?size=280',
         brandName: 'Metolius',
         itemName: 'Refillable Super Chalk Sock',
         itemRating: 4,
