@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import LeftButton from './LeftButton';
-import RightButton from './RightButton';
-import ItemPane from './ItemPane';
+import LeftButton from './shared/LeftButton';
+import RightButton from './shared/RightButton';
+import ItemPane from './shared/ItemPane';
 
 const AlsoViewed = () => {
   const [currentPage, setCurrentPage] = useState([1, 2, 3, 4, 5, 6]);

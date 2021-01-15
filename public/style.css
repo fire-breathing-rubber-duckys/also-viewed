@@ -11,22 +11,19 @@
 
 .carousel-enter {
   opacity: 0.01;
-  transform: translateX(100vw);
+  transition-duration: 500ms ease;
 }
-
 .carousel-enter.carousel-enter-active {
   opacity: 1;
-  transition: 1000ms ease-out;
-  transform: translateX(0%);
+  transition: translateX(-100vw);
 }
 
 .carousel-leave {
-  opacity: 1;
-  transform: translateX(0%);
+  opacity: 0.01;
+  transform: 500ms fa;
 }
 
 .carousel-leave.carousel-leave-active {
-  opacity: 0.01;
-  transition: 1000ms ease-out;
-  transform: translateX(-100vw);
+  opacity: 1;
+  transition: translate(-100, 0);
 }

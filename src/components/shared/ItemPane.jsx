@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
-import Item from './Item';
+import Item from '../shared/Item';
 
 const ItemPane = ({ data, currentPage }) => (
   <div>
@@ -9,8 +9,8 @@ const ItemPane = ({ data, currentPage }) => (
       component="div"
       className="flex-container"
       transitionName="carousel"
-      transitionEnterTimeout={150}
-      transitionLeaveTimeout={300}
+      transitionEnterTimeout={200}
+      transitionLeaveTimeout={50}
     >
       {data.map((item) => {
         if (currentPage.includes(item.productId)) {
