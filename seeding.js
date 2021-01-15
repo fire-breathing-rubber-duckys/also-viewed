@@ -36,24 +36,7 @@ const seed = async () => {
   await dropMongo();
   await seedViewed();
   await seedBought();
-};
-
-const seeAll = async () => {
-  try {
-    console.log('Listing Documents... Bought ...', '\n');
-    await Bought.find().then((results) => console.log(results));
-    console.log('\n');
-    console.log('Listing Documents... Viewed ...', '\n');
-    await Viewed.find().then((results) => console.log(results));
-  } catch (error) {
-    console.log(`Error! ${error}...`);
-  }
-};
-
-const driver = async () => {
-  await seed();
-  await seeAll();
   process.exit(0);
 };
 
-driver();
+seed();
