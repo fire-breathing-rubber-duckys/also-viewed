@@ -9,8 +9,21 @@ const MainContainer = styled.div`
   align-items: center;
 `;
 
-const Wrapper = styled.div`
-  margin: 5px;
+const ButtonStyleShow = styled.div`
+  border-radius: 50%;
+  height: 40px;
+  bottom: initial;
+  background: #f9f8f6;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(12,11,8,.2);
+  border: none;
+  outline: none;
+`;
+
+const ButtonStyleHide = styled.div`
+  height: 40px;
+  opacity: 0;
+  border: none;
+  outline: none;
 `;
 
 const ViewMain = ({ data }) => {
@@ -25,21 +38,51 @@ const ViewMain = ({ data }) => {
     }
   }, [page]);
 
-
   let currentPage = data.map((item, i) => {
     if (valid.includes(item.productId)) {
       return <Item item={item} key={i} />;
     }
   });
 
-  return (
-    <div className="main">
-      <MainContainer>
+  let rightButton;
+  let leftButton;
+
+  if (page === 0) {
+    rightButton = (
+      <ButtonStyleShow>
+        <button
+          type="button"
+          onClick={() => {
+            setPage(1);
+          }}>Right</button>
+      </ButtonStyleShow>
+    );
+    leftButton = (
+      <ButtonStyleHide>
+        <button type="button">Left</button>
+      </ButtonStyleHide>
+    );
+  } else {
+    leftButton = (
+      <ButtonStyleShow>
         <button
           type="button"
           onClick={() => {
             setPage(0);
           }}>Left</button>
+      </ButtonStyleShow>
+    );
+    rightButton = (
+      <ButtonStyleHide>
+        <button type="button">right</button>
+      </ButtonStyleHide>
+    );
+  }
+
+  return (
+    <div className="main">
+      <MainContainer>
+        {leftButton}
         <CSSTransitionGroup
           transitionEnterTimeout={500}
           transitionLeaveTimeout={500}
@@ -49,11 +92,7 @@ const ViewMain = ({ data }) => {
             {currentPage}
           </MainContainer>
         </CSSTransitionGroup>
-        <button
-          type="button"
-          onClick={() => {
-            setPage(1);
-          }}>Right</button>
+        {rightButton}
       </MainContainer>
     </div>
   );

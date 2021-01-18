@@ -22,11 +22,26 @@ h1 {
 }
 
 .item-price {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: rgba(111, 109, 109, 0.954);
-  font-size: 15.5px;
+  font-size: 14px;
 }
 
+.item-rating-count {
+  font-family: 'Lato', sans-serif;
+  color: rgba(111, 109, 109, 0.954);
+  font-size: 12.5px;
+}
+
+button {
+  border-radius: 50%;
+  height: 40px;
+  bottom: initial;
+  background: #f9f8f6;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(12,11,8,.2);
+  border: none;
+  outline: none;
+}
 
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;
