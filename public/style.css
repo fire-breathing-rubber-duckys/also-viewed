@@ -2,14 +2,31 @@ div {
   display: block;
 }
 
-body {
-  color: rgba(12,11,8,.75);
+.item-name {
+  font-family: 'Helvetica Neue';
+  font-style: bold;
+  color:rgba(45, 44, 44, 0.892);
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Mukta', sans-serif;
+  color: rgba(33, 32, 32, 0.879);
+  font-size: 24px;
 }
 
 .item-brand {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 0.75em;
+  color: rgba(62, 58, 58, 0.954);
+  font-size: 0.65em;
 }
+
+.item-price {
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(111, 109, 109, 0.954);
+  font-size: 15.5px;
+}
+
 
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;
