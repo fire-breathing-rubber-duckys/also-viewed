@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -10,9 +11,9 @@ const ItemWrapper = styled.div`
 
 const Item = ({ item }) => {
   const stringArr = item.itemName.split(' ');
-  let stringOne = [];
-  let stringTwo = [];
-  let rating;
+  const ratingCount = `(${item.ratingCount})`;
+  const stringOne = [];
+  const stringTwo = [];
 
   for (let i = 0; i < stringArr.length; i += 1) {
     if (i < 2) {
@@ -22,12 +23,11 @@ const Item = ({ item }) => {
     }
   }
 
-  let ratingCount = `(${item.ratingCount})`;
   return (
     <div>
       <ItemWrapper>
         <img src={item.photoURL} alt="" />
-        <div className="flex-item-content">
+        <div>
           <div className="item-name">
             <div className="item-brand">{item.brandName}</div>
             {stringOne.join(' ')}

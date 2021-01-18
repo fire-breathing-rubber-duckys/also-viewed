@@ -2,10 +2,6 @@ div {
   display: block;
 }
 
-.flex-box {
-  display: flex;
-}
-
 
 .item-name {
   font-family: 'Helvetica Neue';
@@ -58,24 +54,21 @@ img {
   object-fit: contain;
 }
 
-.flex-item-content {
-  word-wrap: break-word;
-}
-
 .carousel-enter {
-  transform: translateX(100vw);
+  transform: translateX(-100vw);
 }
 
 .carousel-enter.carousel-enter-active {
   transform: translateX(0);
-  transition: all 500ms ease-in-out;
+  transition: all 1500ms ease-in-out;
 }
 
 .carousel-leave {
-  transform: translateX(0);
+  transform: translate(400, -100);
+
 }
 
 .carousel-leave.carousel-leave-active {
   transform: translateX(-100vw);
-  transition: all 500ms ease-in-out;
+  transition: all 1500ms ease-in-out;
 }

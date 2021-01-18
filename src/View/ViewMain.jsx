@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
 import { CSSTransitionGroup } from 'react-transition-group';
-import Item from './ViewItem';
+import PropTypes from 'prop-types';
+import ViewPage from './ViewPage';
 
 const MainContainer = styled.div`
   display: flex;
@@ -38,16 +38,6 @@ const ViewMain = ({ data }) => {
     }
   }, [page]);
 
-  let currentPage = (
-    <div className="flex-box">
-      {data.map((item, i) => {
-        if (valid.includes(item.productId)) {
-          return <Item item={item} key={i} />;
-        }
-      })}
-    </div>
-  );
-
   let rightButton;
   let leftButton;
 
@@ -58,12 +48,15 @@ const ViewMain = ({ data }) => {
           type="button"
           onClick={() => {
             setPage(1);
-          }}>Right</button>
+          }}
+        >
+          Right
+        </button>
       </ButtonStyleShow>
     );
     leftButton = (
       <ButtonStyleHide>
-        <button type="button">Left</button>
+        <button type="button"> </button>
       </ButtonStyleHide>
     );
   } else {
@@ -73,12 +66,15 @@ const ViewMain = ({ data }) => {
           type="button"
           onClick={() => {
             setPage(0);
-          }}>Left</button>
+          }}
+        >
+          Left
+        </button>
       </ButtonStyleShow>
     );
     rightButton = (
       <ButtonStyleHide>
-        <button type="button">right</button>
+        <button type="button"> </button>
       </ButtonStyleHide>
     );
   }
@@ -88,16 +84,20 @@ const ViewMain = ({ data }) => {
       <MainContainer>
         {leftButton}
         <CSSTransitionGroup
-          transitionEnterTimeout={500}
-          transitionLeaveTimeout={500}
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
           transitionName="carousel"
         >
-          {currentPage}
+          <ViewPage data={data} valid={valid} />
         </CSSTransitionGroup>
         {rightButton}
       </MainContainer>
     </div>
   );
+};
+
+ViewMain.propTypes = {
+  data: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default ViewMain;

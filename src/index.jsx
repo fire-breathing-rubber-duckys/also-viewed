@@ -36,7 +36,11 @@ const Main = () => {
         <ViewMain data={viewData} />
       </div>
       <div className="bought-main">
-        <h1> People shopping {itemName} ultimately bought</h1>
+        <h1>
+          People shopping
+          {itemName}
+          ultimately bought
+        </h1>
         <ViewMain data={boughtData} />
       </div>
     </div>
