@@ -1,29 +1,28 @@
-.flex-container {
-  display: inline-flex;
-  flex-direction: row;
-  margin-left: 60px;
-  margin-right: 60px;
+
+img {
+  width:  150px;
+  height: 150px;
+  object-fit: contain;
 }
 
-.flex-item {
-  margin: auto;
+.flex-item-content {
+  word-wrap: break-word;
 }
 
 .carousel-enter {
-  opacity: 0.01;
-  transition-duration: 500ms ease;
+  transform: translateX(100vw);
 }
+
 .carousel-enter.carousel-enter-active {
-  opacity: 1;
-  transition: translateX(-100vw);
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
 }
 
 .carousel-leave {
-  opacity: 0.01;
-  transform: 500ms fa;
+  transform: translateX(0);
 }
 
 .carousel-leave.carousel-leave-active {
-  opacity: 1;
-  transition: translate(-100, 0);
+  transform: translateX(-100vw);
+  transition: all 500ms ease-in-out;
 }
