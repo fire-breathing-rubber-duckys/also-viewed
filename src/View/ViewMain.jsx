@@ -10,7 +10,7 @@ const MainContainer = styled.div`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
+  margin: 5px;
 `;
 
 const ViewMain = ({ data }) => {

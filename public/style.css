@@ -1,3 +1,19 @@
+div {
+  display: block;
+}
+
+body {
+  color: rgba(12,11,8,.75);
+}
+
+.item-brand {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.75em;
+}
+
+.item-brand:hover, .item-name:hover {
+  text-decoration: underline;
+}
 
 img {
   width:  150px;
