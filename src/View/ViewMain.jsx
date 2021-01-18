@@ -38,11 +38,15 @@ const ViewMain = ({ data }) => {
     }
   }, [page]);
 
-  let currentPage = data.map((item, i) => {
-    if (valid.includes(item.productId)) {
-      return <Item item={item} key={i} />;
-    }
-  });
+  let currentPage = (
+    <div className="flex-box">
+      {data.map((item, i) => {
+        if (valid.includes(item.productId)) {
+          return <Item item={item} key={i} />;
+        }
+      })}
+    </div>
+  );
 
   let rightButton;
   let leftButton;
@@ -88,9 +92,7 @@ const ViewMain = ({ data }) => {
           transitionLeaveTimeout={500}
           transitionName="carousel"
         >
-          <MainContainer>
-            {currentPage}
-          </MainContainer>
+          {currentPage}
         </CSSTransitionGroup>
         {rightButton}
       </MainContainer>

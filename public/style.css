@@ -2,6 +2,11 @@ div {
   display: block;
 }
 
+.flex-box {
+  display: flex;
+}
+
+
 .item-name {
   font-family: 'Helvetica Neue';
   font-style: bold;
