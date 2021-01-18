@@ -15,11 +15,16 @@ const Item = ({ item }) => {
   const stringOne = [];
   const stringTwo = [];
 
-  for (let i = 0; i < stringArr.length; i += 1) {
-    if (i < 2) {
-      stringOne.push(stringArr[i]);
-    } else {
-      stringTwo.push(stringArr[i]);
+  if (stringArr[0].length > 8 && stringArr.length === 2) {
+    stringOne.push(stringArr[0]);
+    stringTwo.push(stringArr[1]);
+  } else {
+    for (let i = 0; i < stringArr.length; i += 1) {
+      if (i < 2) {
+        stringOne.push(stringArr[i]);
+      } else {
+        stringTwo.push(stringArr[i]);
+      }
     }
   }
 

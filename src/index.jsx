@@ -14,7 +14,7 @@ const Main = () => {
         setViewData(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        throw error;
       });
   }, []);
 
@@ -25,7 +25,7 @@ const Main = () => {
         setItemName(` ${response.data[0].productName}`);
       })
       .catch((error) => {
-        console.log(error);
+        throw error;
       });
   }, []);
 
