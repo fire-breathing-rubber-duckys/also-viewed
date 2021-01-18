@@ -8,7 +8,7 @@ const PageWrapper = styled.div`
 `;
 
 const ViewPage = ({ data, valid }) => (
-  <div>
+  <>
     <PageWrapper>
       {data.map((item) => {
         if (valid.includes(item.productId)) {
@@ -17,7 +17,7 @@ const ViewPage = ({ data, valid }) => (
         return undefined;
       })}
     </PageWrapper>
-  </div>
+  </>
 );
 
 ViewPage.propTypes = {

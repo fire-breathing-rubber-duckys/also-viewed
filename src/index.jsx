@@ -22,7 +22,7 @@ const Main = () => {
     axios.get('http://localhost:1337/api/ultimately-bought/fetch')
       .then((response) => {
         setBoughtData(response.data[0].related);
-        setItemName(response.data[0].productName);
+        setItemName(` ${response.data[0].productName}`);
       })
       .catch((error) => {
         console.log(error);
@@ -30,7 +30,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="view-main">
         <h1> People Also Viewed </h1>
         <ViewMain data={viewData} />
@@ -43,8 +43,10 @@ const Main = () => {
         </h1>
         <ViewMain data={boughtData} />
       </div>
-    </div>
+    </>
   );
 };
+
+export default Main;
 
 render(<Main />, document.getElementById('app'));

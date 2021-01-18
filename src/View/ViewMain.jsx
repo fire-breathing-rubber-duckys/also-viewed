@@ -80,19 +80,19 @@ const ViewMain = ({ data }) => {
   }
 
   return (
-    <div className="main">
+    <>
       <MainContainer>
         {leftButton}
         <CSSTransitionGroup
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}
+          transitionEnterTimeout={10000}
+          transitionLeaveTimeout={10000}
           transitionName="carousel"
         >
           <ViewPage data={data} valid={valid} />
         </CSSTransitionGroup>
         {rightButton}
       </MainContainer>
-    </div>
+    </>
   );
 };
 

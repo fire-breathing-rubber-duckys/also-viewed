@@ -24,7 +24,7 @@ const Item = ({ item }) => {
   }
 
   return (
-    <div>
+    <>
       <ItemWrapper>
         <img src={item.photoURL} alt="" />
         <div>
@@ -39,7 +39,7 @@ const Item = ({ item }) => {
           <div className="item-price">{item.itemPrice}</div>
         </div>
       </ItemWrapper>
-    </div>
+    </>
   );
 };
 
