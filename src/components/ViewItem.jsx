@@ -15,9 +15,14 @@ const Item = ({ item }) => {
   const stringOne = [];
   const stringTwo = [];
 
+  // Logic to filter the itemName to format in a nice fashion //
   if (stringArr[0].length > 8 && stringArr.length === 2) {
     stringOne.push(stringArr[0]);
     stringTwo.push(stringArr[1]);
+  } else if (stringArr[0].length > 8 && stringArr.length === 3) {
+    stringOne.push(stringArr[0]);
+    stringTwo.push(stringArr[1]);
+    stringTwo.push(stringArr[2]);
   } else {
     for (let i = 0; i < stringArr.length; i += 1) {
       if (i < 2) {

@@ -86,12 +86,12 @@ const usersBought = [
       },
       {
         productId: 10,
-        photoURL: 'https://www.rei.com/media/product/860616?size=280',
+        photoURL: 'https://www.rei.com/media/product/183263?size=280',
         brandName: 'Pro-Tec Athletics',
-        itemName: 'Exercise Stretch Band',
-        itemRating: 0,
-        itemPrice: '$24.95',
-        ratingCount: 0,
+        itemName: 'Essentials Resistance Bands',
+        itemRating: 3,
+        itemPrice: '$14.95',
+        ratingCount: 2,
       },
       {
         productId: 11,
