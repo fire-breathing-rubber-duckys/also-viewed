@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import Main from './Main';
-import ViewMain from './ViewMain';
+import Main from '../src/components/Main';
+import ViewMain from '../src/components/ViewMain';
 
 describe('Main Component Rendering', () => {
   it('Should render view-main and bought-main', () => {

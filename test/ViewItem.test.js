@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import ViewItem from './ViewItem';
+import ViewItem from '../src/components/ViewItem';
 
 describe('View Item Rendering', () => {
   it('should render two (item-name, item-brand) divs', () => {

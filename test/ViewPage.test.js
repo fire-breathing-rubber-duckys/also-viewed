@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
-import ViewPage from './ViewPage';
-import ViewItem from './ViewItem';
+import ViewPage from '../src/components/ViewPage';
+import ViewItem from '../src/components/ViewItem';
 
 describe('View Page Rendering', () => {
   it('should render six ViewItems at a time', () => {
