@@ -37,10 +37,10 @@
 }
 
 .item-name {
-  font-family: 'Helvetica Neue';
+  font-family: 'Lato', sans-serif;
   font-style: bold;
   color: rgba(12, 11, 8, .75);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .item-brand {
