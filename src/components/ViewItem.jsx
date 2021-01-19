@@ -21,8 +21,7 @@ const Item = ({ item }) => {
     stringTwo.push(stringArr[1]);
   } else if (stringArr[0].length > 8 && stringArr.length === 3) {
     stringOne.push(stringArr[0]);
-    stringTwo.push(stringArr[1]);
-    stringTwo.push(stringArr[2]);
+    stringTwo.push(stringArr[1], stringArr[2]);
   } else {
     for (let i = 0; i < stringArr.length; i += 1) {
       if (i < 2) {
