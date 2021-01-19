@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Item from './ViewItem';
+import ViewItem from './ViewItem';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ const ViewPage = ({ data, valid }) => (
     <PageWrapper>
       {data.map((item) => {
         if (valid.includes(item.productId)) {
-          return <Item item={item} key={item.productId} />;
+          return <ViewItem item={item} key={item.productId} />;
         }
         return undefined;
       })}

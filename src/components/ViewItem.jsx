@@ -9,7 +9,7 @@ const ItemWrapper = styled.div`
   margin-bottom: 55px;
 `;
 
-const Item = ({ item }) => {
+const ViewItem = ({ item }) => {
   const stringArr = item.itemName.split(' ');
   const ratingCount = `(${item.ratingCount})`;
   const stringOne = [];
@@ -52,8 +52,8 @@ const Item = ({ item }) => {
   );
 };
 
-Item.propTypes = {
+ViewItem.propTypes = {
   item: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default Item;
+export default ViewItem;
