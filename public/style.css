@@ -6,14 +6,14 @@ div {
 .item-name {
   font-family: 'Helvetica Neue';
   font-style: bold;
-  color:rgba(45, 44, 44, 0.892);
+  color: rgba(12, 11, 8, .75);
   font-size: 18px;
 }
 
 h1 {
   font-family: 'Mukta', sans-serif;
-  color: rgba(33, 32, 32, 0.879);
-  font-size: 24px;
+  color: rgba(12, 11, 8, .75);
+  font-size: 22px;
 }
 
 .item-brand {

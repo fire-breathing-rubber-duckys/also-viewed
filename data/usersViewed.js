@@ -1,7 +1,7 @@
 const usersViewed = [
   {
     productId: 1,
-    photoURL: 'https://www.rei.com/media/product/101409?size=280',
+    photoURL: 'https://www.rei.com/media/product/148949?size=280',
     brandName: 'Manduka',
     itemName: 'Lean Cork Block',
     itemRating: 5,
