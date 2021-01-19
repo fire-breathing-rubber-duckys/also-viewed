@@ -31,11 +31,11 @@ const Main = () => {
   return (
     <>
       <div className="view-main">
-        <h1> People Also Viewed </h1>
+        <h1 className="title"> People Also Viewed </h1>
         <ViewMain data={viewData} />
       </div>
       <div className="bought-main">
-        <h1>
+        <h1 className="title">
           People shopping
           {itemName}
           ultimately bought
