@@ -22,6 +22,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
     "cors": "^2.8.5",
     "enzyme-to-json": "^3.6.1",
     "express": "^4.17.1",
