@@ -53,3 +53,5 @@ app.get('/api/ultimately-bought/fetch-all', (req, res) => {
 app.listen(PORT, () => {
   console.log(`App server listening at port: ${PORT}`);
 });
+
+module.exports = app;
