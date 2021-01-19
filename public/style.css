@@ -2,6 +2,31 @@ div {
   display: block;
 }
 
+.fa {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgba(52, 50, 50, 0.845);
+}
+
+.arrow {
+  border: solid rgb(57, 55, 55);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 8px;
+  margin-left: 7.5px;
+  opacity: 0.55;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
 .item-name {
   font-family: 'Helvetica Neue';

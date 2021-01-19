@@ -50,7 +50,7 @@ const ViewMain = ({ data }) => {
             setPage(1);
           }}
         >
-          Right
+          <i class="fa fa-long-arrow-right" />
         </button>
       </ButtonStyleShow>
     );
@@ -68,7 +68,7 @@ const ViewMain = ({ data }) => {
             setPage(0);
           }}
         >
-          Left
+          <i class="fa fa-long-arrow-left" />
         </button>
       </ButtonStyleShow>
     );
