@@ -1,5 +1,5 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { expect } from 'chai';
 import Main from './Main';
 import ViewMain from './ViewMain';
@@ -14,8 +14,4 @@ describe('Main Component Rendering', () => {
     const wrapper = shallow(<Main />);
     expect(wrapper.find(ViewMain)).to.have.lengthOf(2);
   });
-});
-
-describe('Main Component Props', () => {
-
 });

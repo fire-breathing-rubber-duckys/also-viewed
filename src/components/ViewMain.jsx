@@ -45,12 +45,13 @@ const ViewMain = ({ data }) => {
     rightButton = (
       <ButtonStyleShow>
         <button
+          className="btn"
           type="button"
           onClick={() => {
             setPage(1);
           }}
         >
-          <i class="fa fa-long-arrow-right" />
+          <i className="fa fa-long-arrow-right" />
         </button>
       </ButtonStyleShow>
     );
@@ -63,12 +64,13 @@ const ViewMain = ({ data }) => {
     leftButton = (
       <ButtonStyleShow>
         <button
+          className="btn"
           type="button"
           onClick={() => {
             setPage(0);
           }}
         >
-          <i class="fa fa-long-arrow-left" />
+          <i className="fa fa-long-arrow-left" />
         </button>
       </ButtonStyleShow>
     );
