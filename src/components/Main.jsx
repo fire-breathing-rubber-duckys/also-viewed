@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ViewMain from './View/ViewMain';
+import ViewMain from './ViewMain';
 
 const Main = () => {
   const [viewData, setViewData] = useState([]);
