@@ -12,5 +12,5 @@ describe('View Main Rendering', () => {
   it('should render one button at a time', () => {
     const wrapper = shallow(<ViewMain />);
     expect(wrapper.find('.btn')).to.be.lengthOf(1);
-  })
+  });
 });

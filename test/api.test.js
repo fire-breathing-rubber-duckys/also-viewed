@@ -2,27 +2,33 @@ const request = require('supertest');
 const app = require('../server/index');
 
 describe('API Tests', () => {
-  it('Should get a response given a GET top-picks', () => {
-    return request(app)
+  it('Should get a response 200 given a GET top-picks', (done) => {
+    request(app)
       .get('/api/top-picks/fetch')
-      .then((response) => {
-        expect(response.statusCode).toBe(200);
+      .expect(200)
+      .end((err, res) => {
+        if (err) throw err;
+        done();
       });
   });
 
-  it('Should get a response given a GET ultimately-bought', () => {
-    return request(app)
+  it('Should get a response 200 given a GET ultimately-bought', (done) => {
+    request(app)
       .get('/api/ultimately-bought/fetch')
-      .then((response) => {
-        expect(response.statusCode).toBe(200);
+      .expect(200)
+      .end((err, res) => {
+        if (err) throw err;
+        done();
       });
   });
 
-  it('Should get a response given a GET ultimately-bought/fetch-all', () => {
-    return request(app)
+  it('Should get a response 200 given a GET ultimately-bought/fetch-all', (done) => {
+    request(app)
       .get('/api/ultimately-bought/fetch-all')
-      .then((response) => {
-        expect(response.statusCode).toBe(200);
+      .expect(200)
+      .end((err, res) => {
+        if (err) throw err;
+        done();
       });
   });
 });
