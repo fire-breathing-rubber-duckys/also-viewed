@@ -1,5 +1,5 @@
 {
-  "name": "feature-products",
+  "name": "also-viewed",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,31 +11,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r0bertcode/feature-products.git"
+    "url": "git+https://github.com/r0bertcode/also-viewed.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/r0bertcode/feature-products/issues"
+    "url": "https://github.com/r0bertcode/also-viewed/issues"
   },
-  "homepage": "https://github.com/r0bertcode/feature-products#readme",
+  "homepage": "https://github.com/r0bertcode/also-viewed#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
-    "chai": "^4.2.0",
-    "chai-enzyme": "^1.0.0-beta.1",
     "cors": "^2.8.5",
-    "enzyme-to-json": "^3.6.1",
     "express": "^4.17.1",
     "mongoose": "^5.11.11",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-test-renderer": "^17.0.1",
     "react-transition-group": "^1.2.1",
-    "request": "^2.88.2",
-    "styled-components": "^5.2.1",
-    "supertest": "^6.1.1"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -54,7 +48,11 @@
     "webpack": "^5.13.0",
     "webpack-cli": "^4.3.1",
     "babel-jest": "^26.6.3",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "supertest": "^6.1.1",
+    "enzyme-to-json": "^3.6.1"
   },
   "jest": {
     "setupFilesAfterEnv": [

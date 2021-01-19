@@ -16,3 +16,6 @@ describe('Main Component Rendering', () => {
   });
 });
 
+describe('Main Component Props', () => {
+
+});
