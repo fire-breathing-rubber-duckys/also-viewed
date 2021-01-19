@@ -21,7 +21,7 @@ const Main = () => {
     axios.get('http://localhost:1337/api/ultimately-bought/fetch')
       .then((response) => {
         setBoughtData(response.data[0].related);
-        setItemName(` ${response.data[0].productName}`);
+        setItemName(` ${response.data[0].productName} `);
       })
       .catch((error) => {
         throw error;
