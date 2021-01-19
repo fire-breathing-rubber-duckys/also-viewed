@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import StarRating from './StarRating';
 
 const ItemWrapper = styled.div`
   margin-left: 15px;
@@ -43,7 +44,7 @@ const ViewItem = ({ item }) => {
             <br />
             {stringTwo.join(' ')}
           </div>
-          <label className="item-rating">{item.itemRating}</label>
+          <StarRating rating={item.itemRating} />
           <label className="item-rating-count">{ratingCount}</label>
           <div className="item-price">{item.itemPrice}</div>
         </div>

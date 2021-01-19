@@ -1,11 +1,13 @@
-div {
-  display: block;
-}
 
 .fa {
   margin-left: 5px;
   margin-right: 5px;
   color: rgba(52, 50, 50, 0.8);
+}
+
+.fa-star-half-alt, .fa-star {
+  font-size: 0.73em;
+  color: rgba(249, 202, 16, 0.9);
 }
 
 .arrow {
