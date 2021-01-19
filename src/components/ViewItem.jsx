@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -12,7 +11,7 @@ const ItemWrapper = styled.div`
 
 const ViewItem = ({ item }) => {
   const stringArr = item.itemName.split(' ');
-  const ratingCount = `(${item.ratingCount})`;
+  const ratingCount = ` (${item.ratingCount})`;
   const stringOne = [];
   const stringTwo = [];
 
@@ -44,8 +43,7 @@ const ViewItem = ({ item }) => {
             <br />
             {stringTwo.join(' ')}
           </div>
-          <StarRating rating={item.itemRating} />
-          <label className="item-rating-count">{ratingCount}</label>
+          <StarRating rating={item.itemRating} ratingCount={ratingCount} />
           <div className="item-price">{item.itemPrice}</div>
         </div>
       </ItemWrapper>

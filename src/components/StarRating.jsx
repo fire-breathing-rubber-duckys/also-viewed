@@ -1,7 +1,8 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, ratingCount }) => {
   const [starsArr, setStarsArr] = useState([]);
   useEffect(() => {
     switch (rating) {
@@ -34,12 +35,14 @@ const StarRating = ({ rating }) => {
         }
         return undefined;
       })}
+      <label className="item-rating-count">{ratingCount}</label>
     </div>
   );
 };
 
 StarRating.propTypes = {
   rating: PropTypes.number.isRequired,
+  ratingCount: PropTypes.string.isRequired,
 };
 
 export default StarRating;
