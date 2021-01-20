@@ -9,7 +9,4 @@ jobs:
     steps:
       - checkout
       - run: npm run seed
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+      - run: npm run test
