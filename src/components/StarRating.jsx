@@ -26,13 +26,13 @@ const StarRating = ({ rating, ratingCount }) => {
     <div>
       {starsArr.map((star, i) => {
         if (star === 0) {
-          return <i className="far fa-star" key={i} />;
+          return <i className="far fa-star" key={i} id="star" />;
         }
         if (star === 0.5) {
-          return <i className="fas fa-star-half-alt" key={i} />;
+          return <i className="fas fa-star-half-alt" key={i} id="star" />;
         }
         if (star === 1) {
-          return <i className="fas fa-star" key={i} />;
+          return <i className="fas fa-star" key={i} id="star" />;
         }
         return undefined;
       })}

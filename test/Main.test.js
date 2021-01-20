@@ -15,6 +15,10 @@ describe('Main Component Rendering', () => {
     const wrapper = shallow(<Main />);
     expectChai(wrapper.find(ViewMain)).to.have.lengthOf(2);
   });
+  it('Should contain both headers', () => {
+    const wrapper = shallow(<Main />);
+    expectChai(wrapper.find('.title')).to.have.lengthOf(2);
+  });
 });
 
 it('Should render correctly', () => {

@@ -14,10 +14,20 @@ describe('View Main Rendering', () => {
   });
 });
 
-it('Should only render the left button, when the right is click', () => {
-  const wrapper = shallow(<ViewMain data={usersViewed} valid={valid}/>);
-  wrapper.find('.btn-right').simulate('click');
-  expectChai(wrapper.find('.btn-left')).to.be.lengthOf(1);
+describe('User Interface Interaction', () => {
+  it('Should only render the left button, when the right is clicked', () => {
+    const wrapper = shallow(<ViewMain data={usersViewed} valid={valid}/>);
+    wrapper.find('.btn-right').simulate('click');
+    expectChai(wrapper.find('.btn-left')).to.be.lengthOf(1);
+    expectChai(wrapper.find('.btn-right')).to.be.lengthOf(0);
+  });
+  it('Should only render the right button, when the left is clicked', () => {
+    const wrapper = shallow(<ViewMain data={usersViewed} valid={valid}/>);
+    wrapper.find('.btn-right').simulate('click');
+    wrapper.find('.btn-left').simulate('click');
+    expectChai(wrapper.find('.btn-left')).to.be.lengthOf(0);
+    expectChai(wrapper.find('.btn-right')).to.be.lengthOf(1);
+  });
 });
 
 it('Should render correctly', () => {
