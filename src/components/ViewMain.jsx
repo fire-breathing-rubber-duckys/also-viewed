@@ -6,16 +6,7 @@ import ViewPage from './ViewPage';
 const MainContainer = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const ButtonStyleShow = styled.div`
-  border-radius: 50%;
-  height: 40px;
   bottom: initial;
-  background: #f9f8f6;
-  box-shadow: 1 0.4rem 0.4rem 0 rgba(12,11,8,.2);
-  border: none;
-  outline: none;
 `;
 
 const ButtonStyleShowHover = styled.div`
@@ -84,19 +75,17 @@ const ViewMain = ({ data }) => {
     );
   } else if (page === 0 && !hover) {
     rightButton = (
-      <ButtonStyleShow>
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="btn-right"
-          type="button"
-          onClick={() => {
-            setPage(1);
-          }}
-        >
-          <i className="fa fa-long-arrow-right" />
-        </button>
-      </ButtonStyleShow>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="btn-right"
+        type="button"
+        onClick={() => {
+          setPage(1);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
     leftButton = (
       <ButtonStyleHide>
@@ -126,19 +115,17 @@ const ViewMain = ({ data }) => {
     );
   } else {
     leftButton = (
-      <ButtonStyleShow>
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="btn-left"
-          type="button"
-          onClick={() => {
-            setPage(0);
-          }}
-        >
-          <i className="fa fa-long-arrow-left" />
-        </button>
-      </ButtonStyleShow>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="btn-left"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
     rightButton = (
       <ButtonStyleHide>
@@ -151,7 +138,7 @@ const ViewMain = ({ data }) => {
     <>
       <MainContainer>
         {leftButton}
-        <ViewPage data={data} valid={valid} />
+        <ViewPage data={data} valid={valid} page={page} />
         {rightButton}
       </MainContainer>
     </>

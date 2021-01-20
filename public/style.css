@@ -4,11 +4,12 @@
   font-size: 22px;
 }
 
-
-.fa {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: rgba(52, 50, 50, 0.8);
+.fa-long-arrow-right, .fa-long-arrow-left {
+  color: rgba(94, 92, 92, 0.892);
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 12px;
+  padding-bottom: 7px;
 }
 
 .fa-star-half-alt, .fa-star {
@@ -16,28 +17,10 @@
   color: rgba(245, 196, 111, 0.92);
 }
 
-.arrow {
-  border: solid rgb(57, 55, 55);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  opacity: 0.55;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
 .item-name {
   font-family: 'Lato', sans-serif;
   font-style: bold;
-  color: rgba(12, 11, 8, .90);
+  color: rgba(38, 37, 37, 0.9);
   font-size: 17px;
 }
 
@@ -69,6 +52,7 @@ button {
   border: none;
   outline: none;
 }
+
 
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;

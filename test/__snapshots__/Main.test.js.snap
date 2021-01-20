@@ -11,10 +11,10 @@ Array [
        People Also Viewed 
     </h1>
     <div
-      className="sc-dlfnbm CZBcd"
+      className="sc-dlfnbm dISVmb"
     >
       <div
-        className="sc-jSgupP cpAXob"
+        className="sc-eCssSg fkcAEy"
       >
         <button
           type="button"
@@ -27,21 +27,17 @@ Array [
           className="sc-gsTCUz fiWKJe"
         />
       </div>
-      <div
-        className="sc-hKgILt fghBas"
+      <button
+        className="btn-right"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
       >
-        <button
-          className="btn-right"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          type="button"
-        >
-          <i
-            className="fa fa-long-arrow-right"
-          />
-        </button>
-      </div>
+        <i
+          className="fa fa-long-arrow-right"
+        />
+      </button>
     </div>
   </div>,
   <div
@@ -55,10 +51,10 @@ Array [
       ultimately bought
     </h1>
     <div
-      className="sc-dlfnbm CZBcd"
+      className="sc-dlfnbm dISVmb"
     >
       <div
-        className="sc-jSgupP cpAXob"
+        className="sc-eCssSg fkcAEy"
       >
         <button
           type="button"
@@ -71,21 +67,17 @@ Array [
           className="sc-gsTCUz fiWKJe"
         />
       </div>
-      <div
-        className="sc-hKgILt fghBas"
+      <button
+        className="btn-right"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
       >
-        <button
-          className="btn-right"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          type="button"
-        >
-          <i
-            className="fa fa-long-arrow-right"
-          />
-        </button>
-      </div>
+        <i
+          className="fa fa-long-arrow-right"
+        />
+      </button>
     </div>
   </div>,
 ]

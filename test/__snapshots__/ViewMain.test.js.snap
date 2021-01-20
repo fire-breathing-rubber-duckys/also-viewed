@@ -2,10 +2,10 @@
 
 exports[`Should render correctly 1`] = `
 <div
-  className="sc-dlfnbm CZBcd"
+  className="sc-dlfnbm dISVmb"
 >
   <div
-    className="sc-jSgupP cpAXob"
+    className="sc-eCssSg fkcAEy"
   >
     <button
       type="button"
@@ -223,20 +223,16 @@ exports[`Should render correctly 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="sc-hKgILt fghBas"
+  <button
+    className="btn-right"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="button"
   >
-    <button
-      className="btn-right"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      type="button"
-    >
-      <i
-        className="fa fa-long-arrow-right"
-      />
-    </button>
-  </div>
+    <i
+      className="fa fa-long-arrow-right"
+    />
+  </button>
 </div>
 `;
