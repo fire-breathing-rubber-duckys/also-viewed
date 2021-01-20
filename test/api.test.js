@@ -1,4 +1,5 @@
 const request = require('supertest');
+const mongoose = require('mongoose');
 const app = require('../server/index');
 
 describe('API Tests', () => {
@@ -19,4 +20,8 @@ describe('API Tests', () => {
       .get('/api/ultimately-bought/fetch-all')
       .expect(200, done);
   });
+});
+
+afterAll(() => {
+  mongoose.connection.close();
 });
