@@ -3,16 +3,11 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
   build:
-    executor: node/default
     steps:
       - checkout
-      - node/install-npm
-      - node/seed
-      - persist_to_workspace:
-        root: .
-        paths:
-          - .
+      - run: npm run seed
 workflows:
   node-tests:
     jobs:
+      - build
       - node/test
