@@ -1,28 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { expect } from 'chai';
+import { expect as expectChai } from 'chai';
+import renderer from 'react-test-renderer';
 import ViewItem from '../src/components/ViewItem';
-
-describe('View Item Rendering', () => {
-  it('should render two (item-name, item-brand) divs', () => {
-    const wrapper = shallow(<ViewItem item={item} />);
-    expect(wrapper.find('.item-name')).to.be.lengthOf(1);
-    expect(wrapper.find('.item-brand')).to.be.lengthOf(1);
-  });
-  it('should render one image', () => {
-    const wrapper = shallow(<ViewItem item={item} />);
-    expect(wrapper.find('img')).to.be.lengthOf(1);
-  });
-  it('should render two (item-rating, item-rating-count) labels', () => {
-    const wrapper = shallow(<ViewItem item={item} />);
-    expect(wrapper.find('.item-rating')).to.be.lengthOf(1);
-    expect(wrapper.find('.item-rating-count')).to.be.lengthOf(1);
-  });
-  it('should render one item-price dev', () => {
-    const wrapper = shallow(<ViewItem item={item} />);
-    expect(wrapper.find('.item-price')).to.be.lengthOf(1);
-  });
-});
+import StarRating from '../src/components/StarRating';
 
 const item = {
   productId: 1,
@@ -33,3 +14,30 @@ const item = {
   itemPrice: '$16.00',
   ratingCount: 2,
 };
+
+describe('View Item Rendering', () => {
+  it('should render two (item-name, item-brand) divs', () => {
+    const wrapper = shallow(<ViewItem item={item} />);
+    expectChai(wrapper.find('.item-name')).to.be.lengthOf(1);
+    expectChai(wrapper.find('.item-brand')).to.be.lengthOf(1);
+  });
+  it('should render one image', () => {
+    const wrapper = shallow(<ViewItem item={item} />);
+    expectChai(wrapper.find('img')).to.be.lengthOf(1);
+  });
+  it('should render StarRating once', ()=> {
+    const wrapper = shallow(<ViewItem item={item} />);
+    expectChai(wrapper.find(StarRating)).to.be.lengthOf(1);
+  });
+  it('should render one item-price dev', () => {
+    const wrapper = shallow(<ViewItem item={item} />);
+    expectChai(wrapper.find('.item-price')).to.be.lengthOf(1);
+  });
+});
+
+it('Should render correctly', () => {
+  const tree = renderer
+    .create(<ViewItem item={item} />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

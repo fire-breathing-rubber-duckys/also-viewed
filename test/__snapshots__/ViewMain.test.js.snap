@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+<div
+  className="sc-dlfnbm CZBcd"
+>
+  <div
+    className="sc-jSgupP cpAXob"
+  >
+    <button
+      type="button"
+    >
+       
+    </button>
+  </div>
+  <span>
+    <div
+      className="sc-gsTCUz ywWHk"
+    >
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/148949?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Manduka
+            </div>
+            Lean Cork
+            <br />
+            Block
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (2)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $16.00
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/182895?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Manduka
+            </div>
+            Rectangular
+            <br />
+            Bolster
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (2)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $68.00
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/173243?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Manduka
+            </div>
+            unBLOK Recycled
+            <br />
+            Foam Yoga Block
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (3)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $24.00
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/101409?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Jade
+            </div>
+            Cork Yoga
+            <br />
+            Block
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (6)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $14.95-$19.95
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/182894?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Manduka
+            </div>
+            Lean Bolster
+            <br />
+            
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (1)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $56.00
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-bdfBwQ fCuAeK"
+      >
+        <img
+          alt=""
+          src="https://www.rei.com/media/product/843154?size=280"
+        />
+        <div>
+          <div
+            className="item-name"
+          >
+            <div
+              className="item-brand"
+            >
+              Manduka
+            </div>
+            Recycled Foam
+            <br />
+            Yoga Block
+          </div>
+          <div>
+            <label
+              className="item-rating-count"
+            >
+               (8)
+            </label>
+          </div>
+          <div
+            className="item-price"
+          >
+            $16.00
+          </div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <div
+    className="sc-hKgILt fghBas"
+  >
+    <button
+      className="btn"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      type="button"
+    >
+      <i
+        className="fa fa-long-arrow-right"
+      />
+    </button>
+  </div>
+</div>
+`;

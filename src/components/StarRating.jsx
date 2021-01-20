@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
@@ -23,15 +24,15 @@ const StarRating = ({ rating, ratingCount }) => {
 
   return (
     <div>
-      {starsArr.map((star) => {
+      {starsArr.map((star, i) => {
         if (star === 0) {
-          return <i className="far fa-star" />;
+          return <i className="far fa-star" key={i} />;
         }
         if (star === 0.5) {
-          return <i className="fas fa-star-half-alt" />;
+          return <i className="fas fa-star-half-alt" key={i} />;
         }
         if (star === 1) {
-          return <i className="fas fa-star" />;
+          return <i className="fas fa-star" key={i} />;
         }
         return undefined;
       })}
