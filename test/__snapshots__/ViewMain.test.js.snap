@@ -227,7 +227,7 @@ exports[`Should render correctly 1`] = `
     className="sc-hKgILt fghBas"
   >
     <button
-      className="btn"
+      className="btn-right"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}

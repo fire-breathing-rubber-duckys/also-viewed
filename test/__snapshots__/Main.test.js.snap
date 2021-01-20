@@ -31,7 +31,7 @@ Array [
         className="sc-hKgILt fghBas"
       >
         <button
-          className="btn"
+          className="btn-right"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -75,7 +75,7 @@ Array [
         className="sc-hKgILt fghBas"
       >
         <button
-          className="btn"
+          className="btn-right"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}

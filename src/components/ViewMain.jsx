@@ -68,7 +68,7 @@ const ViewMain = ({ data }) => {
         <button
           onMouseEnter={hoverOn}
           onMouseLeave={hoverOff}
-          className="btn"
+          className="btn-right"
           type="button"
           onClick={() => {
             setPage(1);
@@ -89,7 +89,7 @@ const ViewMain = ({ data }) => {
         <button
           onMouseEnter={hoverOn}
           onMouseLeave={hoverOff}
-          className="btn"
+          className="btn-right"
           type="button"
           onClick={() => {
             setPage(1);
@@ -110,7 +110,7 @@ const ViewMain = ({ data }) => {
         <button
           onMouseEnter={hoverOn}
           onMouseLeave={hoverOff}
-          className="btn"
+          className="btn-left"
           type="button"
           onClick={() => {
             setPage(0);
@@ -131,7 +131,7 @@ const ViewMain = ({ data }) => {
         <button
           onMouseEnter={hoverOn}
           onMouseLeave={hoverOff}
-          className="btn"
+          className="btn-left"
           type="button"
           onClick={() => {
             setPage(0);
