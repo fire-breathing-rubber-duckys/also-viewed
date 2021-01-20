@@ -13,9 +13,9 @@ exports[`Should render correctly 1`] = `
        
     </button>
   </div>
-  <span>
+  <div>
     <div
-      className="sc-gsTCUz ywWHk"
+      className="sc-gsTCUz fiWKJe"
     >
       <div
         className="sc-bdfBwQ fCuAeK"
@@ -222,7 +222,7 @@ exports[`Should render correctly 1`] = `
         </div>
       </div>
     </div>
-  </span>
+  </div>
   <div
     className="sc-hKgILt fghBas"
   >

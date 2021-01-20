@@ -7,6 +7,7 @@ const models = require('./models');
 
 const PORT = 1337;
 const app = express();
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());

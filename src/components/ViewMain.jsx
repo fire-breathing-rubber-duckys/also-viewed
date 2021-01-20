@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { CSSTransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import ViewPage from './ViewPage';
 
@@ -152,13 +151,7 @@ const ViewMain = ({ data }) => {
     <>
       <MainContainer>
         {leftButton}
-        <CSSTransitionGroup
-          transitionEnterTimeout={10000}
-          transitionLeaveTimeout={10000}
-          transitionName="carousel"
-        >
-          <ViewPage data={data} valid={valid} />
-        </CSSTransitionGroup>
+        <ViewPage data={data} valid={valid} />
         {rightButton}
       </MainContainer>
     </>
