@@ -11,7 +11,7 @@ global.document = document;
 global.window = document.defaultView;
 
 const rating = 4;
-const ratingCount = 13;
+const ratingCount = '13';
 
 
 describe('Star Rating Rendering', () => {
@@ -23,6 +23,13 @@ describe('Star Rating Rendering', () => {
   it('Should render the correct ratingCount', () => {
     const wrapper = mount(<StarRating rating={rating} ratingCount={ratingCount} />);
     const priceWrapper = wrapper.find('.item-rating-count');
-    expectChai(priceWrapper.text()).to.equal(ratingCount.toString());
+    expectChai(priceWrapper.text()).to.equal(ratingCount);
   });
+});
+
+it('Should render correctly', () => {
+  const tree = renderer
+    .create(<StarRating rating={rating} ratingCount={ratingCount} />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });
