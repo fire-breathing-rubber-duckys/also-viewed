@@ -8,5 +8,6 @@ jobs:
       - image: 'circleci/mongo:latest'
     steps:
       - checkout
+      - run: npm install
       - run: npm run seed
       - run: npm run test
