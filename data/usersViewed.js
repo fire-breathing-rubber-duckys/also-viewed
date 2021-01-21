@@ -41,7 +41,7 @@ const usersViewed = [
     brandName: 'Manduka',
     itemName: 'Lean Bolster',
     itemRating: 2,
-    itemPrice: '$56.00',
+    itemPrice: '$43.95 $56.00',
     ratingCount: 1,
   },
   {

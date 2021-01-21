@@ -24,8 +24,6 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
-    "bulma": "^0.9.1",
-    "bulma-carousel": "^4.0.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.11",

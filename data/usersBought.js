@@ -9,7 +9,7 @@ const usersBought = [
         brandName: 'Manduka',
         itemName: 'Align Yoga Strap',
         itemRating: 5,
-        itemPrice: '$16.00',
+        itemPrice: '$16.00 $24.00',
         ratingCount: 4,
       },
       {
@@ -54,7 +54,7 @@ const usersBought = [
         brandName: 'Manduka',
         itemName: 'Go Move Yoga Mat Sling',
         itemRating: 3,
-        itemPrice: '$20.00',
+        itemPrice: '$20.00 $34.00',
         ratingCount: 77,
       },
       {
@@ -114,7 +114,7 @@ const usersBought = [
         brandName: 'Black Diamond',
         itemName: 'Solution Harness - Men\'s',
         itemRating: 4.5,
-        itemPrice: '$74.95',
+        itemPrice: '$74.95 $99.99',
         ratingCount: 28,
       },
       {
@@ -123,7 +123,7 @@ const usersBought = [
         brandName: 'Black Diamond',
         itemName: 'Momentum Harness - Men\'s',
         itemRating: 5,
-        itemPrice: '$59.95',
+        itemPrice: '$45.00 $59.95',
         ratingCount: 6,
       },
       {
@@ -150,7 +150,7 @@ const usersBought = [
         brandName: 'Metolius',
         itemName: 'Refillable Super Chalk Sock',
         itemRating: 4,
-        itemPrice: '$4.95',
+        itemPrice: '$5.99',
         ratingCount: 53,
       },
       {
@@ -204,7 +204,7 @@ const usersBought = [
         brandName: 'Petzl',
         itemName: 'Corax Harness',
         itemRating: 4.5,
-        itemPrice: '$59.95',
+        itemPrice: '$40.00 $59.95',
         ratingCount: 35,
       },
     ],
@@ -219,7 +219,7 @@ const usersBought = [
         brandName: 'REI Co-op',
         itemName: 'Travel Kit - Large',
         itemRating: 4.5,
-        itemPrice: '$19.95',
+        itemPrice: '$19.95 $23.45',
         ratingCount: 8,
       },
       {
@@ -237,7 +237,7 @@ const usersBought = [
         brandName: 'REI Co-op',
         itemName: 'Shower Roll - Small',
         itemRating: 5,
-        itemPrice: '$29.95',
+        itemPrice: '$29.95 $34.59',
         ratingCount: 33,
       },
       {
@@ -300,7 +300,7 @@ const usersBought = [
         brandName: 'Patagonia',
         itemName: 'Black Hole Cube 3L - Small',
         itemRating: 5,
-        itemPrice: '$29.00',
+        itemPrice: '$29.00 $44.59',
         ratingCount: 13,
       },
       {
