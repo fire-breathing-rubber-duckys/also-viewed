@@ -20,9 +20,9 @@ const ViewItem = ({ item }) => {
   // Logic to filter item price by reg Vs sale item //
   let price;
   if (ip.length < 8 || ip[6] !== ' ') {
-    price = <label className="item-price">{item.itemPrice}</label>;
+    price = <label className="item-price">{ip}</label>;
   } else {
-    const priceArr = item.itemPrice.split(' ');
+    const priceArr = ip.split(' ');
     const priceOne = ` ${priceArr[0]}`;
     const priceTwo = ` ${priceArr[1]}`;
     price = (
