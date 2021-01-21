@@ -86,7 +86,7 @@ const usersViewed = [
     brandName: 'Pro-Tec Athletics',
     itemName: 'Exercise Stretch Band',
     itemRating: 0,
-    itemPrice: '$24.95',
+    itemPrice: '$24.95 $29.99',
     ratingCount: 0,
   },
   {

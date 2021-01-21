@@ -7,13 +7,6 @@ import ViewPage from '../src/components/ViewPage';
 import usersViewed from '../data/usersViewed';
 const valid = [1, 2, 3, 4, 5, 6];
 
-describe('View Main Rendering', () => {
-  it('should render ViewPage once', () => {
-    const wrapper = shallow(<ViewMain />);
-    expectChai(wrapper.find(ViewPage)).to.be.lengthOf(1);
-  });
-});
-
 describe('User Interface Interaction', () => {
   it('Should only render the left button, when the right is clicked', () => {
     const wrapper = shallow(<ViewMain data={usersViewed} valid={valid}/>);
@@ -35,4 +28,9 @@ it('Should render correctly', () => {
     .create(<ViewMain data={usersViewed} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
+});
+
+it('Should render ViewPage once', () => {
+  const wrapper = shallow(<ViewMain />);
+  expectChai(wrapper.find(ViewPage)).to.be.lengthOf(1);
 });

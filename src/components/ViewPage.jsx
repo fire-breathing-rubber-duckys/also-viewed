@@ -6,7 +6,6 @@ import ViewItem from './ViewItem';
 
 const PageWrapper = styled.div`
   display: flex;
-  flex-direction: row;
 `;
 
 const ViewPage = ({ data, valid }) => (

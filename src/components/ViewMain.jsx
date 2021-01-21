@@ -6,7 +6,6 @@ import ViewPage from './ViewPage';
 const MainContainer = styled.div`
   display: flex;
   align-items: center;
-  bottom: initial;
 `;
 
 const ButtonStyleShowHover = styled.div`

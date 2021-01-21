@@ -28,11 +28,11 @@ exports[`Should render correctly 1`] = `
          (2)
       </label>
     </div>
-    <div
+    <label
       className="item-price"
     >
       $16.00
-    </div>
+    </label>
   </div>
 </div>
 `;
