@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import StarRating from './StarRating';
 
 const ItemWrapper = styled.div`
   margin-left: 15px;
@@ -11,9 +12,26 @@ const ItemWrapper = styled.div`
 
 const ViewItem = ({ item }) => {
   const stringArr = item.itemName.split(' ');
-  const ratingCount = `(${item.ratingCount})`;
+  const ratingCount = ` (${item.ratingCount})`;
+  const ip = item.itemPrice;
   const stringOne = [];
   const stringTwo = [];
+
+  // Logic to filter item price by reg Vs sale item //
+  let price;
+  if (ip.length < 8 || ip[6] !== ' ') {
+    price = <label className="item-price">{ip}</label>;
+  } else {
+    const priceArr = ip.split(' ');
+    const priceOne = ` ${priceArr[0]}`;
+    const priceTwo = ` ${priceArr[1]}`;
+    price = (
+      <div>
+        <label className="item-sale-discount">{priceOne}</label>
+        <label className="item-sale-price">{priceTwo}</label>
+      </div>
+    );
+  }
 
   // Logic to filter the itemName to format in a nice fashion //
   if (stringArr[0].length > 8 && stringArr.length === 2) {
@@ -43,9 +61,8 @@ const ViewItem = ({ item }) => {
             <br />
             {stringTwo.join(' ')}
           </div>
-          <label className="item-rating">{item.itemRating}</label>
-          <label className="item-rating-count">{ratingCount}</label>
-          <div className="item-price">{item.itemPrice}</div>
+          <StarRating rating={item.itemRating} ratingCount={ratingCount} />
+          {price}
         </div>
       </ItemWrapper>
     </>

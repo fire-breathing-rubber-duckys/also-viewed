@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly 1`] = `
+Array [
+  <div
+    className="view-main"
+  >
+    <h1
+      className="title"
+    >
+       People Also Viewed 
+    </h1>
+    <div
+      className="sc-dlfnbm CZBcd"
+    >
+      <div
+        className="sc-eCssSg fkcAEy"
+      >
+        <button
+          type="button"
+        >
+           
+        </button>
+      </div>
+      <div>
+        <div
+          className="sc-gsTCUz ywWHk"
+        />
+      </div>
+      <button
+        className="btn-right"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
+      >
+        <i
+          className="fa fa-long-arrow-right"
+        />
+      </button>
+    </div>
+  </div>,
+  <div
+    className="bought-main"
+  >
+    <h1
+      className="title"
+    >
+      People shopping
+      
+      ultimately bought
+    </h1>
+    <div
+      className="sc-dlfnbm CZBcd"
+    >
+      <div
+        className="sc-eCssSg fkcAEy"
+      >
+        <button
+          type="button"
+        >
+           
+        </button>
+      </div>
+      <div>
+        <div
+          className="sc-gsTCUz ywWHk"
+        />
+      </div>
+      <button
+        className="btn-right"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
+      >
+        <i
+          className="fa fa-long-arrow-right"
+        />
+      </button>
+    </div>
+  </div>,
+]
+`;
