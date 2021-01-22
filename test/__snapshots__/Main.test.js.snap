@@ -24,11 +24,13 @@ Array [
           className="fa fa-long-arrow-left"
         />
       </button>
-      <div>
+      <span
+        transition="carousel"
+      >
         <div
           className="sc-gsTCUz ywWHk"
         />
-      </div>
+      </span>
       <button
         className="btn-right"
         onClick={[Function]}
@@ -66,11 +68,13 @@ Array [
           className="fa fa-long-arrow-left"
         />
       </button>
-      <div>
+      <span
+        transition="carousel"
+      >
         <div
           className="sc-gsTCUz ywWHk"
         />
-      </div>
+      </span>
       <button
         className="btn-right"
         onClick={[Function]}

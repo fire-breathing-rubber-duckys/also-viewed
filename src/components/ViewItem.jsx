@@ -10,7 +10,7 @@ const ItemWrapper = styled.div`
   margin-bottom: 55px;
 `;
 
-const ViewItem = ({ item }) => {
+const ViewItem = ({ item, cName }) => {
   const stringArr = item.itemName.split(' ');
   const ratingCount = ` (${item.ratingCount})`;
   const ip = item.itemPrice;
@@ -52,7 +52,7 @@ const ViewItem = ({ item }) => {
 
   return (
     <>
-      <ItemWrapper>
+      <ItemWrapper className={cName}>
         <img src={item.photoURL} alt="" />
         <div>
           <div className="item-name">

@@ -2,6 +2,16 @@
   font-family: 'Mukta', sans-serif;
   color: rgba(12, 11, 8, .75);
   font-size: 22px;
+  letter-spacing: -.016rem;
+  margin-left: 40px;
+  line-height: 2.6rem;
+}
+
+.also-viewed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .fa-long-arrow-right, .fa-long-arrow-left {
@@ -16,12 +26,14 @@
 .fa-star-half-alt, .fa-star {
   font-size: 0.73em;
   color: rgba(245, 196, 111, 0.92);
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .item-name {
   font-family: 'Lato', sans-serif;
   font-style: bold;
-  color: rgba(38, 37, 37, 0.9);
+  color: rgba(82, 80, 80, 0.9);
   font-size: 17px;
 }
 
@@ -34,7 +46,7 @@
 
 .item-price {
   font-family: 'Lato', sans-serif;
-  color: rgba(85, 83, 83, 0.85);
+  color: rgba(99, 96, 96, 0.85);
   font-size: 13px;
 }
 
@@ -58,6 +70,7 @@
   font-family: 'Lato', sans-serif;
   color: rgba(111, 109, 109, 0.954);
   font-size: 12.5px;
+  margin-left: 3px;
 }
 
 .hidden {
@@ -70,7 +83,7 @@
   outline: none;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 1s, opacity 650ms linear;
 }
 
 .btn-right, .btn-left {
@@ -93,15 +106,13 @@
   outline: none;
 }
 
-
-
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;
 }
 
 img {
-  width:  150px;
-  height: 150px;
+  width:  175px;
+  height: 175px;
   object-fit: contain;
 }
 

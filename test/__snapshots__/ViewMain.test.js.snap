@@ -15,7 +15,9 @@ exports[`Should render correctly 1`] = `
       className="fa fa-long-arrow-left"
     />
   </button>
-  <div>
+  <span
+    transition="carousel"
+  >
     <div
       className="sc-gsTCUz ywWHk"
     >
@@ -231,7 +233,7 @@ exports[`Should render correctly 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </span>
   <button
     className="btn-right"
     onClick={[Function]}
