@@ -53,30 +53,30 @@ const ViewMain = ({ data }) => {
 
   if (page === 0 && hover) {
     rightButton = (
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="button-hover"
-          type="button"
-          onClick={() => {
-            setPage(1);
-          }}
-        >
-          <i className="fa fa-long-arrow-right" />
-        </button>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="button-hover"
+        type="button"
+        onClick={() => {
+          setPage(1);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
     leftButton = (
       <button
-      onMouseEnter={hoverOn}
-      onMouseLeave={hoverOff}
-      className="hidden"
-      type="button"
-      onClick={() => {
-        setPage(0);
-      }}
-    >
-      <i className="fa fa-long-arrow-left" />
-    </button>
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
   } else if (page === 0 && !hover) {
     rightButton = (
@@ -94,43 +94,43 @@ const ViewMain = ({ data }) => {
     );
     leftButton = (
       <button
-      onMouseEnter={hoverOn}
-      onMouseLeave={hoverOff}
-      className="hidden"
-      type="button"
-      onClick={() => {
-        setPage(0);
-      }}
-    >
-      <i className="fa fa-long-arrow-left" />
-    </button>
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
   } else if (page === 1 && hover) {
     leftButton = (
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="button-hover"
-          type="button"
-          onClick={() => {
-            setPage(0);
-          }}
-        >
-          <i className="fa fa-long-arrow-left" />
-        </button>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="button-hover"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
     rightButton = (
       <button
-      onMouseEnter={hoverOn}
-      onMouseLeave={hoverOff}
-      className="hidden"
-      type="button"
-      onClick={() => {
-        setPage(0);
-      }}
-    >
-      <i className="fa fa-long-arrow-right" />
-    </button>
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
   } else {
     leftButton = (
@@ -148,16 +148,16 @@ const ViewMain = ({ data }) => {
     );
     rightButton = (
       <button
-      onMouseEnter={hoverOn}
-      onMouseLeave={hoverOff}
-      className="hidden"
-      type="button"
-      onClick={() => {
-        setPage(0);
-      }}
-    >
-      <i className="fa fa-long-arrow-right" />
-    </button>
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
   }
 
