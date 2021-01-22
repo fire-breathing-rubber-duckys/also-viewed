@@ -21,6 +21,7 @@
   padding-left: 6px;
   padding-top: 12px;
   padding-bottom: 7px;
+  margin-bottom: 36px;
 }
 
 .fa-star-half-alt, .fa-star {
@@ -79,7 +80,7 @@
   bottom: initial;
   background: #f9f8f6;
   box-shadow: 0 0.6rem 0.6rem 0 rgba(12,11,8,.08);
-  border: none;
+  border: solid 2px rgba(38, 159, 252, 0.461);
   outline: none;
   visibility: hidden;
   opacity: 0;
