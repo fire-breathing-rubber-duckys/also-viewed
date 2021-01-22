@@ -60,7 +60,30 @@
   font-size: 12.5px;
 }
 
-button {
+.hidden {
+  border-radius: 50%;
+  height: 40px;
+  bottom: initial;
+  background: #f9f8f6;
+  box-shadow: 0 0.6rem 0.6rem 0 rgba(12,11,8,.08);
+  border: none;
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.btn-right, .btn-left {
+  border-radius: 50%;
+  height: 40px;
+  bottom: initial;
+  background: #f9f8f6;
+  box-shadow: 0 0.6rem 0.6rem 0 rgba(12,11,8,.08);
+  border: none;
+  outline: none;
+}
+
+.button-hover {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -69,6 +92,7 @@ button {
   border: none;
   outline: none;
 }
+
 
 
 .item-brand:hover, .item-name:hover {
