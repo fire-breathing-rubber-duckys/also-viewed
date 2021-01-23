@@ -86,6 +86,7 @@ img {
 
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .hidden-view, .hidden-bought {
