@@ -11,7 +11,7 @@ Array [
        People Also Viewed 
     </h1>
     <div
-      className="sc-jSgupP bWuRtR"
+      className="sc-jSgupP gRniap"
     >
       <button
         className="hidden-view"
@@ -48,7 +48,7 @@ Array [
       </div>
     </div>
     <div
-      className="sc-gKsewC TXxer"
+      className="sc-gKsewC jzJMhD"
     >
       <button
         className="button-view"
@@ -72,7 +72,7 @@ Array [
       ultimately bought
     </h1>
     <div
-      className="sc-jSgupP bWuRtR"
+      className="sc-jSgupP gRniap"
     >
       <button
         className="hidden-bought"
@@ -109,7 +109,7 @@ Array [
       </div>
     </div>
     <div
-      className="sc-gKsewC TXxer"
+      className="sc-gKsewC jzJMhD"
     >
       <button
         className="button-bought"

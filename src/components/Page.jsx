@@ -18,7 +18,7 @@ const Page = ({ data, page }) => (
           valid = [6, 7, 8, 9, 10, 11];
         }
         if (valid.includes(item.productId)) {
-          return <Item item={item} />;
+          return <Item item={item} key={item.productId} />;
         }
       })}
     </Flex>
