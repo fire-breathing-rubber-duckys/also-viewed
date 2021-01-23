@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CSSTransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import ViewItem from './ViewItem';
 
@@ -10,21 +9,14 @@ const PageWrapper = styled.div`
 
 const ViewPage = ({ data, valid }) => (
   <>
-    <CSSTransitionGroup
-      transitionName="carousel"
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={500}
-      component="div"
-    >
-      <PageWrapper>
-        {data.map((item) => {
-          if (valid.includes(item.productId)) {
-            return <ViewItem item={item} key={item.productId} />;
-          }
-          return undefined;
-        })}
-      </PageWrapper>
-    </CSSTransitionGroup>
+    <PageWrapper>
+      {data.map((item) => {
+        if (valid.includes(item.productId)) {
+          return <ViewItem item={item} key={item.productId} />;
+        }
+        return undefined;
+      })}
+    </PageWrapper>
   </>
 );
 

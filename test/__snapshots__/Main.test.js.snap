@@ -13,20 +13,24 @@ Array [
     <div
       className="sc-dlfnbm CZBcd"
     >
-      <div
-        className="sc-eCssSg fkcAEy"
+      <button
+        className="hidden"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
       >
-        <button
-          type="button"
-        >
-           
-        </button>
-      </div>
-      <div>
+        <i
+          className="fa fa-long-arrow-left"
+        />
+      </button>
+      <span
+        transition="carousel"
+      >
         <div
           className="sc-gsTCUz ywWHk"
         />
-      </div>
+      </span>
       <button
         className="btn-right"
         onClick={[Function]}
@@ -53,20 +57,24 @@ Array [
     <div
       className="sc-dlfnbm CZBcd"
     >
-      <div
-        className="sc-eCssSg fkcAEy"
+      <button
+        className="hidden"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        type="button"
       >
-        <button
-          type="button"
-        >
-           
-        </button>
-      </div>
-      <div>
+        <i
+          className="fa fa-long-arrow-left"
+        />
+      </button>
+      <span
+        transition="carousel"
+      >
         <div
           className="sc-gsTCUz ywWHk"
         />
-      </div>
+      </span>
       <button
         className="btn-right"
         onClick={[Function]}

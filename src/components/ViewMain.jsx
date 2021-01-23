@@ -1,28 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { CSSTransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import ViewPage from './ViewPage';
 
 const MainContainer = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const ButtonStyleShowHover = styled.div`
-  border-radius: 50%;
-  height: 40px;
-  bottom: initial;
-  background: #f9f8f6;
-  box-shadow: 0 0.6rem 0.6rem 0 rgba(12,11,8,.08);
-  border: none;
-  outline: none;
-`;
-
-const ButtonStyleHide = styled.div`
-  height: 40px;
-  opacity: 0;
-  border: none;
-  outline: none;
 `;
 
 const ViewMain = ({ data }) => {
@@ -53,24 +37,30 @@ const ViewMain = ({ data }) => {
 
   if (page === 0 && hover) {
     rightButton = (
-      <ButtonStyleShowHover>
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="btn-right"
-          type="button"
-          onClick={() => {
-            setPage(1);
-          }}
-        >
-          <i className="fa fa-long-arrow-right" />
-        </button>
-      </ButtonStyleShowHover>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="button-hover"
+        type="button"
+        onClick={() => {
+          setPage(1);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
     leftButton = (
-      <ButtonStyleHide>
-        <button type="button"> </button>
-      </ButtonStyleHide>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
   } else if (page === 0 && !hover) {
     rightButton = (
@@ -87,30 +77,44 @@ const ViewMain = ({ data }) => {
       </button>
     );
     leftButton = (
-      <ButtonStyleHide>
-        <button type="button"> </button>
-      </ButtonStyleHide>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
   } else if (page === 1 && hover) {
     leftButton = (
-      <ButtonStyleShowHover>
-        <button
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
-          className="btn-left"
-          type="button"
-          onClick={() => {
-            setPage(0);
-          }}
-        >
-          <i className="fa fa-long-arrow-left" />
-        </button>
-      </ButtonStyleShowHover>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="button-hover"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-left" />
+      </button>
     );
     rightButton = (
-      <ButtonStyleHide>
-        <button type="button"> </button>
-      </ButtonStyleHide>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
   } else {
     leftButton = (
@@ -127,9 +131,17 @@ const ViewMain = ({ data }) => {
       </button>
     );
     rightButton = (
-      <ButtonStyleHide>
-        <button type="button"> </button>
-      </ButtonStyleHide>
+      <button
+        onMouseEnter={hoverOn}
+        onMouseLeave={hoverOff}
+        className="hidden"
+        type="button"
+        onClick={() => {
+          setPage(0);
+        }}
+      >
+        <i className="fa fa-long-arrow-right" />
+      </button>
     );
   }
 
@@ -137,7 +149,13 @@ const ViewMain = ({ data }) => {
     <>
       <MainContainer>
         {leftButton}
-        <ViewPage data={data} valid={valid} page={page} />
+        <CSSTransitionGroup
+          transition="carousel"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
+        >
+          <ViewPage data={data} valid={valid} />
+        </CSSTransitionGroup>
         {rightButton}
       </MainContainer>
     </>
