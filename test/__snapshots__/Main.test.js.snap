@@ -3,7 +3,7 @@
 exports[`Should render correctly 1`] = `
 Array [
   <div
-    className="view-main"
+    className="container-viewed"
   >
     <h1
       className="title"
@@ -11,31 +11,48 @@ Array [
        People Also Viewed 
     </h1>
     <div
-      className="sc-dlfnbm CZBcd"
+      className="sc-jSgupP gRniap"
     >
       <button
-        className="hidden"
+        className="hidden-view"
         onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
         type="button"
       >
         <i
           className="fa fa-long-arrow-left"
         />
       </button>
-      <span
-        transition="carousel"
+    </div>
+    <div>
+      <div
+        className="sc-bdfBwQ eHfRaG"
       >
         <div
-          className="sc-gsTCUz ywWHk"
-        />
-      </span>
+          className="sc-dlfnbm iCRYPp"
+        >
+          <div
+            className="sc-gsTCUz ePRiRs"
+          >
+            <div
+              className="sc-eCssSg ifsWGG"
+            />
+          </div>
+          <div
+            className="sc-gsTCUz koMqhJ"
+          >
+            <div
+              className="sc-eCssSg ifsWGG"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-gKsewC jzJMhD"
+    >
       <button
-        className="btn-right"
+        className="button-view"
         onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
         type="button"
       >
         <i
@@ -45,7 +62,7 @@ Array [
     </div>
   </div>,
   <div
-    className="bought-main"
+    className="container-bought"
   >
     <h1
       className="title"
@@ -55,31 +72,48 @@ Array [
       ultimately bought
     </h1>
     <div
-      className="sc-dlfnbm CZBcd"
+      className="sc-jSgupP gRniap"
     >
       <button
-        className="hidden"
+        className="hidden-bought"
         onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
         type="button"
       >
         <i
           className="fa fa-long-arrow-left"
         />
       </button>
-      <span
-        transition="carousel"
+    </div>
+    <div>
+      <div
+        className="sc-bdfBwQ eHfRaG"
       >
         <div
-          className="sc-gsTCUz ywWHk"
-        />
-      </span>
+          className="sc-dlfnbm iCRYPp"
+        >
+          <div
+            className="sc-gsTCUz ePRiRs"
+          >
+            <div
+              className="sc-eCssSg ifsWGG"
+            />
+          </div>
+          <div
+            className="sc-gsTCUz koMqhJ"
+          >
+            <div
+              className="sc-eCssSg ifsWGG"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-gKsewC jzJMhD"
+    >
       <button
-        className="btn-right"
+        className="button-bought"
         onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
         type="button"
       >
         <i

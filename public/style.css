@@ -3,9 +3,16 @@ body {
 }
 
 img {
-  width:  175px;
-  height: 175px;
+  width:  165px;
+  height: 165px;
   object-fit: contain;
+}
+
+.also-viewed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
 }
 
 .container-viewed {
@@ -27,13 +34,6 @@ img {
   top: 30px;
   left: 0px;
   line-height: 2.6rem;
-}
-
-.also-viewed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
 }
 
 .fa-long-arrow-right, .fa-long-arrow-left {
@@ -96,7 +96,7 @@ img {
   margin-left: 3px;
 }
 
-.hidden {
+.hidden-view, .hidden-bought {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -109,7 +109,7 @@ img {
   transition: visibility 0s 1s, opacity 650ms linear;
 }
 
-.button {
+.button-view, .button-bought {
   border-radius: 50%;
   height: 40px;
   bottom: initial;

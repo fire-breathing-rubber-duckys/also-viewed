@@ -13,7 +13,7 @@ const LeftButton = styled.div`
 
 const RightButton = styled.div`
   position: relative;
-  left: 1180px;
+  left: 1120px;
   bottom: 200px;
   z-index: 3;
 `;
@@ -51,19 +51,19 @@ const Main = () => {
   let boughtBtnRight;
 
   if (currentPageOne === 0) {
-    viewBtnLeft = 'hidden';
-    viewBtnRight = 'button';
+    viewBtnLeft = 'hidden-view';
+    viewBtnRight = 'button-view';
   } else {
-    viewBtnLeft = 'button';
-    viewBtnRight = 'hidden';
+    viewBtnLeft = 'button-view';
+    viewBtnRight = 'hidden-view';
   }
 
   if (currentPageTwo === 0) {
-    boughtBtnLeft = 'hidden';
-    boughtBtnRight = 'button';
+    boughtBtnLeft = 'hidden-bought';
+    boughtBtnRight = 'button-bought';
   } else {
-    boughtBtnLeft = 'button';
-    boughtBtnRight = 'hidden';
+    boughtBtnLeft = 'button-bought';
+    boughtBtnRight = 'hidden-bought';
   }
 
   return (
