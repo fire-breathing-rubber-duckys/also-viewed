@@ -84,6 +84,7 @@ const Main = () => {
           <Page data={pageOneData.slice(0, 6)} page={currentPageOne} />
           <Page data={pageOneData.slice(5, pageOneData.length)} page={currentPageOne} />
         </Slider>
+
         <RightButton>
           <button
             type="button"
@@ -110,10 +111,12 @@ const Main = () => {
             <i className="fa fa-long-arrow-left" />
           </button>
         </LeftButton>
+
         <Slider currentPage={currentPageTwo} className="slider">
           <Page data={pageTwoData.slice(0, 6)} page={currentPageTwo} />
           <Page data={pageTwoData.slice(5, pageTwoData.length)} page={currentPageTwo} />
         </Slider>
+
         <RightButton>
           <button
             type="button"

@@ -8,11 +8,14 @@ img {
   object-fit: contain;
 }
 
+.main {
+  margin-left: 22rem;
+}
+
 .also-viewed {
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 100%;
 }
 
 .container-viewed {
