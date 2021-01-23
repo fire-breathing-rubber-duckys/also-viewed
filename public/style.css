@@ -1,9 +1,31 @@
+body {
+  overflow: hidden;
+}
+
+img {
+  width:  175px;
+  height: 175px;
+  object-fit: contain;
+}
+
+.container-viewed {
+  position: relative;
+  top: -20px;
+}
+
+.container-bought {
+  position: relative;
+  top: -80px;
+}
+
 .title {
   font-family: 'Mukta', sans-serif;
   color: rgba(12, 11, 8, .75);
   font-size: 22px;
   letter-spacing: -.016rem;
-  margin-left: 40px;
+  position: relative;
+  top: 30px;
+  left: 0px;
   line-height: 2.6rem;
 }
 
@@ -87,7 +109,7 @@
   transition: visibility 0s 1s, opacity 650ms linear;
 }
 
-.btn-right, .btn-left {
+.button {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -97,7 +119,7 @@
   outline: none;
 }
 
-.button-hover {
+.button:hover {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -109,29 +131,4 @@
 
 .item-brand:hover, .item-name:hover {
   text-decoration: underline;
-}
-
-img {
-  width:  175px;
-  height: 175px;
-  object-fit: contain;
-}
-
-.carousel-enter {
-  transform: translateX(-100vw);
-}
-
-.carousel-enter.carousel-enter-active {
-  transform: translateX(0);
-  transition: all 1500ms ease-in-out;
-}
-
-.carousel-leave {
-  transform: translate(400, -100);
-
-}
-
-.carousel-leave.carousel-leave-active {
-  transform: translateX(-100vw);
-  transition: all 1500ms ease-in-out;
 }

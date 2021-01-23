@@ -1,46 +1,128 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ViewMain from './ViewMain';
+import styled from 'styled-components';
+import Slider from './Slider';
+import Page from './Page';
+
+const LeftButton = styled.div`
+  position: relative;
+  left: 10px;
+  top: 170px;
+  z-index: 3;
+`;
+
+const RightButton = styled.div`
+  position: relative;
+  left: 1180px;
+  bottom: 200px;
+  z-index: 3;
+`;
 
 const Main = () => {
-  const [viewData, setViewData] = useState([]);
-  const [boughtData, setBoughtData] = useState([]);
-  const [itemName, setItemName] = useState('');
+  const [currentPageOne, setCurrentPageOne] = useState(0);
+  const [currentPageTwo, setCurrentPageTwo] = useState(0);
+  const [productName, setProductName] = useState('');
+  const [pageOneData, setPageOneData] = useState([]);
+  const [pageTwoData, setPageTwoData] = useState([]);
 
   useEffect(() => {
     axios.get('http://localhost:1337/api/top-picks/fetch')
       .then((response) => {
-        setViewData(response.data);
+        setPageOneData(response.data);
       })
       .catch((error) => {
         throw error;
+      })
+      .then(() => {
+        axios.get('http://localhost:1337/api/ultimately-bought/fetch')
+          .then((response) => {
+            setPageTwoData(response.data[0].related);
+            setProductName(` ${response.data[0].productName} `);
+          })
+          .catch((error) => {
+            throw error;
+          });
       });
   }, []);
 
-  useEffect(() => {
-    axios.get('http://localhost:1337/api/ultimately-bought/fetch')
-      .then((response) => {
-        setBoughtData(response.data[0].related);
-        setItemName(` ${response.data[0].productName} `);
-      })
-      .catch((error) => {
-        throw error;
-      });
-  }, []);
+  let viewBtnLeft;
+  let viewBtnRight;
+  let boughtBtnLeft;
+  let boughtBtnRight;
+
+  if (currentPageOne === 0) {
+    viewBtnLeft = 'hidden';
+    viewBtnRight = 'button';
+  } else {
+    viewBtnLeft = 'button';
+    viewBtnRight = 'hidden';
+  }
+
+  if (currentPageTwo === 0) {
+    boughtBtnLeft = 'hidden';
+    boughtBtnRight = 'button';
+  } else {
+    boughtBtnLeft = 'button';
+    boughtBtnRight = 'hidden';
+  }
 
   return (
     <>
-      <div className="view-main">
+      <div className="container-viewed">
         <h1 className="title"> People Also Viewed </h1>
-        <ViewMain data={viewData} />
+        <LeftButton>
+          <button
+            type="button"
+            className={viewBtnLeft}
+            onClick={() => { setCurrentPageOne(0); }}
+          >
+            <i className="fa fa-long-arrow-left" />
+          </button>
+        </LeftButton>
+
+        <Slider currentPage={currentPageOne} className="slider">
+          <Page data={pageOneData.slice(0, 6)} page={currentPageOne} />
+          <Page data={pageOneData.slice(5, pageOneData.length)} page={currentPageOne} />
+        </Slider>
+        <RightButton>
+          <button
+            type="button"
+            className={viewBtnRight}
+            onClick={() => { setCurrentPageOne(1); }}
+          >
+            <i className="fa fa-long-arrow-right" />
+          </button>
+        </RightButton>
       </div>
-      <div className="bought-main">
+
+      <div className="container-bought">
         <h1 className="title">
           People shopping
-          {itemName}
+          {productName}
           ultimately bought
         </h1>
-        <ViewMain data={boughtData} />
+        <LeftButton>
+          <button
+            type="button"
+            className={boughtBtnLeft}
+            onClick={() => { setCurrentPageTwo(0); }}
+          >
+            <i className="fa fa-long-arrow-left" />
+          </button>
+        </LeftButton>
+        <Slider currentPage={currentPageTwo} className="slider">
+          <Page data={pageTwoData.slice(0, 6)} page={currentPageTwo} />
+          <Page data={pageTwoData.slice(5, pageTwoData.length)} page={currentPageTwo} />
+        </Slider>
+        <RightButton>
+          <button
+            type="button"
+            className={boughtBtnRight}
+            onClick={() => { setCurrentPageTwo(1); }}
+          >
+            <i className="fa fa-long-arrow-right" />
+          </button>
+        </RightButton>
       </div>
     </>
   );
