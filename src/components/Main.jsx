@@ -8,14 +8,14 @@ const LeftButton = styled.div`
   position: relative;
   left: 10px;
   top: 170px;
-  z-index: 3;
+  z-index: top;
 `;
 
 const RightButton = styled.div`
   position: relative;
   left: 1120px;
   bottom: 200px;
-  z-index: 3;
+  z-index: top;
 `;
 
 const ContainerView = styled.div`
