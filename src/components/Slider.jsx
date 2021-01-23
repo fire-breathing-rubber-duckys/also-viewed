@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+/* eslint-disable no-confusing-arrow */
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -9,15 +10,15 @@ const FlexBox = styled.div`
 
 const Page = styled.div`
   flex: 0 0 auto;
-  opacity: ${props => props.active ? 1 : 0};
+  opacity: ${(props) => props.active ? 1 : 0};
   transition: all 500ms ease;
   width: 100%;
 `;
 
 const Pages = styled.div`
   display: flex;
-  ${props => props.currentPage
-    && css` transform: translateX(-${props.currentPage * 100}%);` };
+  ${(props) => props.currentPage
+    && css` transform: translateX(-${props.currentPage * 100}%);`};
   transition: all 500ms ease;
 `;
 
@@ -30,8 +31,8 @@ const Slider = ({ children, currentPage }) => {
 
   return (
     <div>
-      <FlexBox>
-        <Pages currentPage={currentPage}>
+      <FlexBox className="flex-box">
+        <Pages currentPage={currentPage} className="pages">
           {activePage}
         </Pages>
       </FlexBox>
