@@ -7,7 +7,7 @@ const Flex = styled.div`
   display: flex;
 `;
 
-const Page = ({ data, page, setPage }) => (
+const Page = ({ data, page }) => (
   <>
     <Flex>
       {data.map((item) => {
@@ -17,11 +17,8 @@ const Page = ({ data, page, setPage }) => (
         } else {
           valid = [6, 7, 8, 9, 10, 11];
         }
-        if (valid.includes(item.productId) && item.productId !== 6) {
+        if (valid.includes(item.productId)) {
           return <Item item={item} />;
-        }
-        if (item.productId === 6) {
-          return <Item setPage={setPage} item={item} />;
         }
       })}
     </Flex>
