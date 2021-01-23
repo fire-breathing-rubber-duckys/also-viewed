@@ -18,6 +18,16 @@ const RightButton = styled.div`
   z-index: 3;
 `;
 
+const ContainerView = styled.div`
+  position: relative;
+  top: -20px;
+`;
+
+const ContainerBought = styled.div`
+  position: relative;
+  top: -80px;
+`;
+
 const Main = () => {
   const [currentPageOne, setCurrentPageOne] = useState(0);
   const [currentPageTwo, setCurrentPageTwo] = useState(0);
@@ -68,7 +78,7 @@ const Main = () => {
 
   return (
     <>
-      <div className="container-viewed">
+      <ContainerView>
         <h1 className="title"> People Also Viewed </h1>
         <LeftButton>
           <button
@@ -94,9 +104,9 @@ const Main = () => {
             <i className="fa fa-long-arrow-right" />
           </button>
         </RightButton>
-      </div>
+      </ContainerView>
 
-      <div className="container-bought">
+      <ContainerBought>
         <h1 className="title">
           People shopping
           {productName}
@@ -126,7 +136,7 @@ const Main = () => {
             <i className="fa fa-long-arrow-right" />
           </button>
         </RightButton>
-      </div>
+      </ContainerBought>
     </>
   );
 };

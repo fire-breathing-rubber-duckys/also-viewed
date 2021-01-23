@@ -8,25 +8,10 @@ img {
   object-fit: contain;
 }
 
-.main {
-  margin-left: 22rem;
+.main-view {
+  margin-left: 21rem;
 }
 
-.also-viewed {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-.container-viewed {
-  position: relative;
-  top: -20px;
-}
-
-.container-bought {
-  position: relative;
-  top: -80px;
-}
 
 .title {
   font-family: 'Mukta', sans-serif;
@@ -99,6 +84,10 @@ img {
   margin-left: 3px;
 }
 
+.item-brand:hover, .item-name:hover {
+  text-decoration: underline;
+}
+
 .hidden-view, .hidden-bought {
   border-radius: 50%;
   height: 40px;
@@ -109,7 +98,7 @@ img {
   outline: none;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 650ms linear;
+  transition: visibility 0s 1000ms, opacity 1000ms linear;
 }
 
 .button-view, .button-bought {
@@ -130,8 +119,4 @@ img {
   box-shadow: 0 0.4rem 0.4rem 0 rgba(12,11,8,.2);
   border: none;
   outline: none;
-}
-
-.item-brand:hover, .item-name:hover {
-  text-decoration: underline;
 }
