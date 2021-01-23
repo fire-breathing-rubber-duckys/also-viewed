@@ -11,7 +11,7 @@ const FlexBox = styled.div`
 const Page = styled.div`
   flex: 0 0 auto;
   opacity: ${(props) => props.active ? 1 : 0};
-  transition: all 750ms ease;
+  transition: all 500ms ease;
   width: 100%;
 `;
 
@@ -19,7 +19,7 @@ const Pages = styled.div`
   display: flex;
   ${(props) => props.currentPage
     && css` transform: translateX(-${props.currentPage * 100}%);`};
-  transition: all 750ms ease;
+  transition: all 700ms ease;
 `;
 
 const Slider = ({ children, currentPage }) => {
