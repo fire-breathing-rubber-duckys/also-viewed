@@ -78,7 +78,7 @@ const Main = () => {
 
   return (
     <>
-      <ContainerView>
+      <ContainerView className="container-viewed">
         <h1 className="title"> People Also Viewed </h1>
         <LeftButton>
           <button
@@ -106,7 +106,7 @@ const Main = () => {
         </RightButton>
       </ContainerView>
 
-      <ContainerBought>
+      <ContainerBought className="container-bought">
         <h1 className="title">
           People shopping
           {productName}
