@@ -1,17 +1,27 @@
+body {
+  overflow: hidden;
+}
+
+img {
+  width:  165px;
+  height: 165px;
+  object-fit: contain;
+}
+
+.main-view {
+  margin-left: 21rem;
+}
+
+
 .title {
   font-family: 'Mukta', sans-serif;
   color: rgba(12, 11, 8, .75);
   font-size: 22px;
   letter-spacing: -.016rem;
-  margin-left: 40px;
+  position: relative;
+  top: 30px;
+  left: 0px;
   line-height: 2.6rem;
-}
-
-.also-viewed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
 }
 
 .fa-long-arrow-right, .fa-long-arrow-left {
@@ -74,7 +84,12 @@
   margin-left: 3px;
 }
 
-.hidden {
+.item-brand:hover, .item-name:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.hidden-view, .hidden-bought {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -84,10 +99,10 @@
   outline: none;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 650ms linear;
+  transition: visibility 0s 1000ms, opacity 1000ms linear;
 }
 
-.btn-right, .btn-left {
+.button-view, .button-bought {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -97,7 +112,7 @@
   outline: none;
 }
 
-.button-hover {
+.button-view:hover, .button-bought:hover {
   border-radius: 50%;
   height: 40px;
   bottom: initial;
@@ -105,33 +120,4 @@
   box-shadow: 0 0.4rem 0.4rem 0 rgba(12,11,8,.2);
   border: none;
   outline: none;
-}
-
-.item-brand:hover, .item-name:hover {
-  text-decoration: underline;
-}
-
-img {
-  width:  175px;
-  height: 175px;
-  object-fit: contain;
-}
-
-.carousel-enter {
-  transform: translateX(-100vw);
-}
-
-.carousel-enter.carousel-enter-active {
-  transform: translateX(0);
-  transition: all 1500ms ease-in-out;
-}
-
-.carousel-leave {
-  transform: translate(400, -100);
-
-}
-
-.carousel-leave.carousel-leave-active {
-  transform: translateX(-100vw);
-  transition: all 1500ms ease-in-out;
 }

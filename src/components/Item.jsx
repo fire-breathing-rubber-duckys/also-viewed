@@ -8,9 +8,11 @@ const ItemWrapper = styled.div`
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 55px;
+  position: relative;
+  z-index: 1;
 `;
 
-const ViewItem = ({ item, cName }) => {
+const Item = ({ item }) => {
   const stringArr = item.itemName.split(' ');
   const ratingCount = ` (${item.ratingCount})`;
   const ip = item.itemPrice;
@@ -52,7 +54,7 @@ const ViewItem = ({ item, cName }) => {
 
   return (
     <>
-      <ItemWrapper className={cName}>
+      <ItemWrapper>
         <img src={item.photoURL} alt="" />
         <div>
           <div className="item-name">
@@ -69,8 +71,8 @@ const ViewItem = ({ item, cName }) => {
   );
 };
 
-ViewItem.propTypes = {
+Item.propTypes = {
   item: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default ViewItem;
+export default Item;
