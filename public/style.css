@@ -8,11 +8,6 @@ img {
   object-fit: contain;
 }
 
-.main-view {
-  margin-left: 21rem;
-}
-
-
 .title {
   font-family: 'Mukta', sans-serif;
   color: rgba(12, 11, 8, .75);
