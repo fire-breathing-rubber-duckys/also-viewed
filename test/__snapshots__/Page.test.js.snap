@@ -9,6 +9,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/148949?size=280"
     />
     <div>
@@ -43,6 +44,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/182895?size=280"
     />
     <div>
@@ -77,6 +79,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/173243?size=280"
     />
     <div>
@@ -111,6 +114,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/101409?size=280"
     />
     <div>
@@ -145,6 +149,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/182894?size=280"
     />
     <div>
@@ -186,6 +191,7 @@ exports[`Should render correctly 1`] = `
   >
     <img
       alt=""
+      className="also-viewed-img"
       src="https://www.rei.com/media/product/843154?size=280"
     />
     <div>

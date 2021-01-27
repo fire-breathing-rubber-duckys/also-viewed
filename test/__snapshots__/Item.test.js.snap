@@ -6,6 +6,7 @@ exports[`Should render correctly 1`] = `
 >
   <img
     alt=""
+    className="also-viewed-img"
     src="https://www.rei.com/media/product/148949?size=280"
   />
   <div>
