@@ -77,7 +77,7 @@ const Main = () => {
   }
 
   return (
-    <>
+    <div className="main-view">
       <ContainerView className="container-viewed">
         <h1 className="title"> People Also Viewed </h1>
         <LeftButton>
@@ -137,7 +137,7 @@ const Main = () => {
           </button>
         </RightButton>
       </ContainerBought>
-    </>
+    </div>
   );
 };
 

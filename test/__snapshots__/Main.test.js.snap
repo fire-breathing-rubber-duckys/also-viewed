@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render correctly 1`] = `
-Array [
+<div
+  className="main-view"
+>
   <div
     className="sc-iBPRYJ KIsfl container-viewed"
   >
@@ -60,7 +62,7 @@ Array [
         />
       </button>
     </div>
-  </div>,
+  </div>
   <div
     className="sc-fubCfw iyZZIK container-bought"
   >
@@ -121,6 +123,6 @@ Array [
         />
       </button>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
