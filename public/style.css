@@ -1,8 +1,8 @@
-body {
-  overflow: hidden;
+.main-view {
+  margin-left: 500px;
 }
 
-img {
+.also-viewed-img {
   width:  165px;
   height: 165px;
   object-fit: contain;

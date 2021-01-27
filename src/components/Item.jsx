@@ -55,7 +55,7 @@ const Item = ({ item }) => {
   return (
     <>
       <ItemWrapper>
-        <img src={item.photoURL} alt="" />
+        <img src={item.photoURL} alt="" className="also-viewed-img" />
         <div>
           <div className="item-name">
             <div className="item-brand">{item.brandName}</div>
