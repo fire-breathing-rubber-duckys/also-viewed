@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/', express.static(path.join(__dirname, '..', 'public')));
-app.use('/product/:productId', express.static(path.join(__dirname, '..', 'public')));
 
 app.get('/api/top-picks/fetch', (req, res) => {
   models.fetchAlsoViewed((err, data) => {
